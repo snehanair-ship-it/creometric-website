@@ -1,4 +1,25 @@
+"use client";
+
+import { FormEvent } from "react";
+import { useRouter } from "next/navigation";
+
 export default function LeadForm() {
+  const router = useRouter();
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    await fetch("/__forms.html", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+    });
+
+    router.push("/thank-you");
+  }
+
   return (
     <section id="contact" className="py-20 px-6 bg-gray-50">
       <div className="max-w-2xl mx-auto">
@@ -10,13 +31,7 @@ export default function LeadForm() {
           with a custom growth plan.
         </p>
 
-        <form
-          name="lead-form"
-          method="POST"
-          data-netlify="true"
-          action="/thank-you"
-          className="space-y-5"
-        >
+        <form onSubmit={handleSubmit} className="space-y-5">
           <input type="hidden" name="form-name" value="lead-form" />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
