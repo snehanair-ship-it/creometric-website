@@ -1,5 +1,6 @@
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
+import LeadForm from "@/components/LeadForm";
 
 export default function Home() {
   return (
@@ -34,6 +35,9 @@ export default function Home() {
 
       {/* Testimonials */}
       <Testimonials />
+
+      {/* Lead Form */}
+      <LeadForm />
     </div>
   );
 }
