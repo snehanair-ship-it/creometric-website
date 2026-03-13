@@ -2,6 +2,7 @@
 
 import { FormEvent } from "react";
 import { useRouter } from "next/navigation";
+import { sendGAEvent } from "@/lib/analytics";
 
 export default function LeadForm() {
   const router = useRouter();
@@ -17,6 +18,7 @@ export default function LeadForm() {
       body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
     });
 
+    sendGAEvent("form_submission", { form_name: "lead-form" });
     router.push("/thank-you");
   }
 

@@ -8,6 +8,12 @@ export const metadata: Metadata = {
     "Digital Marketing Agency in Goa | SEO, Social Media & PPC — Creometric",
   description:
     "Goa's most trusted digital marketing agency. We deliver real results in SEO, social media, PPC and web design for local businesses. Get a free audit today.",
+  openGraph: {
+    title:
+      "Digital Marketing Agency in Goa | SEO, Social Media & PPC — Creometric",
+    description:
+      "Goa's most trusted digital marketing agency. We deliver real results in SEO, social media, PPC and web design for local businesses. Get a free audit today.",
+  },
 };
 
 const localBusinessSchema = {

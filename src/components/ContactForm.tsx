@@ -2,6 +2,7 @@
 
 import { FormEvent } from "react";
 import { useRouter } from "next/navigation";
+import { sendGAEvent } from "@/lib/analytics";
 
 export default function ContactForm() {
   const router = useRouter();
@@ -19,6 +20,7 @@ export default function ContactForm() {
       ).toString(),
     });
 
+    sendGAEvent("form_submission", { form_name: "contact-form" });
     router.push("/thank-you");
   }
 
