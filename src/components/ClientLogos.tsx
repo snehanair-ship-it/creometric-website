@@ -1,54 +1,77 @@
 import Image from "next/image";
 
-const clients = [
-  { src: "/images/clients/client-61.png", alt: "Client" },
-  { src: "/images/clients/client-62.png", alt: "Client" },
-  { src: "/images/clients/client-63.png", alt: "Client" },
-  { src: "/images/clients/client-64.png", alt: "Client" },
-  { src: "/images/clients/client-65.png", alt: "Client" },
-  { src: "/images/clients/client-67.png", alt: "Client" },
-  { src: "/images/clients/client-68.png", alt: "Client" },
-  { src: "/images/clients/client-69.png", alt: "Client" },
-  { src: "/images/clients/client-70.png", alt: "Client" },
-  { src: "/images/clients/client-71.png", alt: "Client" },
-  { src: "/images/clients/client-72.png", alt: "Client" },
-  { src: "/images/clients/client-73.png", alt: "Client" },
-  { src: "/images/clients/client-74.png", alt: "Client" },
-  { src: "/images/clients/client-75.png", alt: "Client" },
-  { src: "/images/clients/client-76.png", alt: "Client" },
-  { src: "/images/clients/client-77.png", alt: "Client" },
-  { src: "/images/clients/client-78.png", alt: "Client" },
-  { src: "/images/clients/client-79.png", alt: "Client" },
-  { src: "/images/clients/client-80.png", alt: "Client" },
-  { src: "/images/clients/client-81.png", alt: "Client" },
-  { src: "/images/clients/client-82.png", alt: "Client" },
-  { src: "/images/clients/client-83.png", alt: "Client" },
-  { src: "/images/clients/client-84.png", alt: "Client" },
+const row1 = [
+  "/images/clients/client-61.png",
+  "/images/clients/client-62.png",
+  "/images/clients/client-63.png",
+  "/images/clients/client-64.png",
+  "/images/clients/client-65.png",
+  "/images/clients/client-67.png",
+  "/images/clients/client-68.png",
+  "/images/clients/client-69.png",
+  "/images/clients/client-70.png",
+  "/images/clients/client-71.png",
+  "/images/clients/client-72.png",
 ];
+
+const row2 = [
+  "/images/clients/client-73.png",
+  "/images/clients/client-74.png",
+  "/images/clients/client-75.png",
+  "/images/clients/client-76.png",
+  "/images/clients/client-77.png",
+  "/images/clients/client-78.png",
+  "/images/clients/client-79.png",
+  "/images/clients/client-80.png",
+  "/images/clients/client-81.png",
+  "/images/clients/client-82.png",
+  "/images/clients/client-83.png",
+  "/images/clients/client-84.png",
+];
+
+function MarqueeRow({ logos, reverse = false }: { logos: string[]; reverse?: boolean }) {
+  // Duplicate logos for seamless loop
+  const doubled = [...logos, ...logos];
+
+  return (
+    <div className="overflow-hidden relative">
+      {/* Fade edges */}
+      <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-24 bg-gradient-to-r from-gray-950 to-transparent z-10" />
+      <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-24 bg-gradient-to-l from-gray-950 to-transparent z-10" />
+      <div
+        className="flex items-center gap-8 sm:gap-12 animate-marquee"
+        style={{ direction: reverse ? "rtl" : "ltr" }}
+      >
+        {doubled.map((src, i) => (
+          <div
+            key={i}
+            className="shrink-0 h-12 sm:h-14 w-24 sm:w-32 flex items-center justify-center"
+          >
+            <Image
+              src={src}
+              alt="Client logo"
+              width={120}
+              height={50}
+              className="object-contain max-h-10 sm:max-h-12 brightness-0 invert opacity-40 hover:opacity-80 transition-opacity duration-300"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function ClientLogos() {
   return (
-    <section className="py-16 px-6 bg-white">
-      <div className="max-w-5xl mx-auto">
-        <p className="text-center text-sm font-medium text-gray-500 uppercase tracking-wide mb-8">
-          Trusted by 20+ businesses across Goa
+    <section className="py-14 sm:py-20 bg-gray-950">
+      <div className="max-w-5xl mx-auto px-6 mb-10">
+        <p className="text-center text-sm font-medium text-gray-400 uppercase tracking-widest">
+          Trusted by businesses across Goa
         </p>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 sm:gap-6">
-          {clients.map((client, i) => (
-            <div
-              key={i}
-              className="h-16 sm:h-20 rounded-xl bg-gray-50 border border-gray-100 flex items-center justify-center px-3"
-            >
-              <Image
-                src={client.src}
-                alt={client.alt}
-                width={120}
-                height={50}
-                className="object-contain max-h-10 sm:max-h-12 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all"
-              />
-            </div>
-          ))}
-        </div>
+      </div>
+      <div className="space-y-6">
+        <MarqueeRow logos={row1} />
+        <MarqueeRow logos={row2} reverse />
       </div>
     </section>
   );
