@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/thank-you",
     },
-    sitemap: "https://lively-kleicha-d45dc0.netlify.app/sitemap.xml",
+    sitemap: "https://creometric.com/sitemap.xml",
   };
 }

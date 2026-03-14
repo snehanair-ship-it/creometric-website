@@ -18,10 +18,10 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-const siteUrl = "https://lively-kleicha-d45dc0.netlify.app";
+const siteUrl = "https://creometric.com";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://lively-kleicha-d45dc0.netlify.app"),
+  metadataBase: new URL(siteUrl),
   verification: {
     google: "NSnkzpHnqcPLki1ZYaxuNc0KjMcdKzU61SgYOy-JGrU",
   },
@@ -34,14 +34,6 @@ export const metadata: Metadata = {
       "Goa's most trusted digital marketing agency. We deliver real results in SEO, social media, PPC and web design for local businesses.",
     url: siteUrl,
     siteName: "Creometric",
-    images: [
-      {
-        url: `${siteUrl}/og-image.png`,
-        width: 1200,
-        height: 630,
-        alt: "Creometric — Digital Marketing Agency in Goa, India",
-      },
-    ],
     locale: "en_IN",
     type: "website",
   },
@@ -50,7 +42,6 @@ export const metadata: Metadata = {
     title: "Creometric | Digital Marketing Agency in Goa, India",
     description:
       "Goa's most trusted digital marketing agency. SEO, social media, PPC and web design.",
-    images: [`${siteUrl}/og-image.png`],
   },
 };
 

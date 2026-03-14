@@ -26,7 +26,7 @@ const localBusinessSchema = {
   name: "Creometric",
   description:
     "Digital marketing agency in Goa, India offering SEO, social media management, PPC, website design, content marketing and web analytics.",
-  url: "https://lively-kleicha-d45dc0.netlify.app",
+  url: "https://creometric.com",
   telephone: "+919850950259",
   address: {
     "@type": "PostalAddress",
