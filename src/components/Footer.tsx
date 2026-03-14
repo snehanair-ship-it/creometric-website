@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const quickLinks = [
@@ -24,13 +25,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
-                <span className="text-white text-sm font-bold">C</span>
-              </div>
-              <span className="text-white text-lg font-bold tracking-tight">
-                Creometric
-              </span>
+            <div className="mb-4">
+              <Image
+                src="/images/logo.svg"
+                alt="Creometric"
+                width={140}
+                height={35}
+                className="brightness-0 invert"
+              />
             </div>
             <p className="text-sm leading-relaxed mb-6">
               Goa&apos;s most trusted digital marketing agency. We help

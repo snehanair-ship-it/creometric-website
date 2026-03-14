@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -20,11 +21,14 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-gray-900 rounded-lg flex items-center justify-center">
-            <span className="text-white text-sm font-bold">C</span>
-          </div>
-          <span className="text-lg font-bold tracking-tight">Creometric</span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/logo.svg"
+            alt="Creometric"
+            width={160}
+            height={40}
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
