@@ -21,6 +21,9 @@ const siteUrl = "https://lively-kleicha-d45dc0.netlify.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lively-kleicha-d45dc0.netlify.app"),
+  verification: {
+    google: "NSnkzpHnqcPLki1ZYaxuNc0KjMcdKzU61SgYOy-JGrU",
+  },
   title: "Creometric | Digital Marketing Agency in Goa, India",
   description:
     "Creometric is a digital marketing agency based in Goa, India. We help brands grow through strategy, design, and technology.",
