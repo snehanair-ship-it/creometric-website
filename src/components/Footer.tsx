@@ -132,7 +132,7 @@ export default function Footer() {
                   hello@creometric.com
                 </a>
               </li>
-              <li>Goa, India</li>
+              <li>Nordic Intent, Lane 4, PDA Colony, Porvorim, Goa</li>
             </ul>
             <a
               href="/#contact"

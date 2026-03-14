@@ -59,7 +59,8 @@ export default function Contact() {
                   Office
                 </h3>
                 <p className="text-gray-700">
-                  Goa, India
+                  Nordic Intent, Lane 4,<br />
+                  PDA Colony, Porvorim, Goa
                 </p>
               </div>
               <div className="inline-flex items-center gap-2 bg-orange-50 text-orange-700 rounded-full px-4 py-2 text-sm font-medium">
@@ -82,30 +83,18 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Google Maps Placeholder */}
-            <div aria-label="Business location map" className="w-full aspect-video bg-gray-100 rounded-2xl border-2 border-dashed border-gray-300 flex flex-col items-center justify-center text-gray-400">
-              <svg
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1}
-                stroke="currentColor"
-                className="w-10 h-10 mb-2"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-                />
-              </svg>
-              <p className="text-sm font-medium">Google Maps Embed</p>
-              <p className="text-xs mt-1">Add your embed URL here</p>
+            {/* Google Maps */}
+            <div className="w-full aspect-video rounded-2xl overflow-hidden border border-gray-200">
+              <iframe
+                title="Creometric Office Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.0!2d73.8278!3d15.4909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDI5JzI3LjIiTiA3M8KwNDknNDAuMSJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin&q=Nordic+Intent,+Lane+4,+PDA+Colony,+Porvorim,+Goa"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </div>
         </div>

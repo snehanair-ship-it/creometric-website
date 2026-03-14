@@ -93,7 +93,7 @@ export default function PrivacyPolicy() {
           <ul className="list-none text-gray-600 space-y-1 mb-4">
             <li><strong>Email:</strong> hello@creometric.com</li>
             <li><strong>Phone:</strong> +91 98509 50259</li>
-            <li><strong>Location:</strong> Goa, India</li>
+            <li><strong>Location:</strong> Nordic Intent, Lane 4, PDA Colony, Porvorim, Goa</li>
           </ul>
 
           <h2 className="text-xl font-semibold mt-8 mb-3">10. Changes to This Policy</h2>

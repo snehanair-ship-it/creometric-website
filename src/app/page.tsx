@@ -30,7 +30,8 @@ const localBusinessSchema = {
   telephone: "+919850950259",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Goa",
+    streetAddress: "Nordic Intent, Lane 4, PDA Colony",
+    addressLocality: "Porvorim",
     addressRegion: "Goa",
     addressCountry: "IN",
   },
