@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -49,8 +50,10 @@ export const metadata: Metadata = {
   },
 };
 
-// TODO: Replace G-XXXXXXXXXX with your actual GA4 Measurement ID
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX";
+// Tracking IDs from existing creometric.com
+const GA_ID = "G-MZJW7K33NY";
+const GTM_ID = "GTM-N4WPPM6";
+const GT_ID = "GT-TNPBMMZ";
 
 export default function RootLayout({
   children,
@@ -65,7 +68,28 @@ export default function RootLayout({
         <Header />
         {children}
         <WhatsAppButton />
+
+        {/* Google Tag Manager */}
+        <GoogleTagManager gtmId={GTM_ID} />
+
+        {/* GA4 — primary */}
         <GoogleAnalytics gaId={GA_ID} />
+
+        {/* GA4 — secondary (GT-TNPBMMZ) with linker */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="gt-config" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('set', 'developer_id.dZTNiMT', true);
+            gtag('config', '${GT_ID}', {
+              linker: { domains: ['creometric.com'] }
+            });
+          `}
+        </Script>
       </body>
     </html>
   );
