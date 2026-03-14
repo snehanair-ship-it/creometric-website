@@ -17,10 +17,10 @@ export default function CTABanner() {
             Get Your Free Audit
           </a>
           <a
-            href="tel:+919145246464"
+            href="tel:+919850950259"
             className="rounded-full border-2 border-white px-8 py-3 text-sm font-semibold hover:bg-white/10 transition-colors"
           >
-            Call +91 91452 46464
+            Call +91 98509 50259
           </a>
         </div>
       </div>

@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact Us | Creometric — Digital Marketing Agency in Goa",
   description:
-    "Get in touch with Creometric. Call +91 91452 46464 or fill out the form. We reply within 24 hours.",
+    "Get in touch with Creometric. Call +91 98509 50259 or fill out the form. We reply within 24 hours.",
 };
 
 export default function Contact() {
@@ -37,10 +37,10 @@ export default function Contact() {
                   Phone
                 </h3>
                 <a
-                  href="tel:+919145246464"
+                  href="tel:+919850950259"
                   className="text-xl font-bold hover:underline"
                 >
-                  +91 91452 46464
+                  +91 98509 50259
                 </a>
               </div>
               <div>

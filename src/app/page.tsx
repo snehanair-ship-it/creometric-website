@@ -27,7 +27,7 @@ const localBusinessSchema = {
   description:
     "Digital marketing agency in Goa, India offering SEO, social media management, PPC, website design, content marketing and web analytics.",
   url: "https://lively-kleicha-d45dc0.netlify.app",
-  telephone: "+919145246464",
+  telephone: "+919850950259",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Goa",
@@ -126,7 +126,7 @@ export default function Home() {
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center animate-fade-up opacity-0 delay-300">
             <a
               href="#contact"
-              className="relative rounded-full bg-orange-500 text-white px-8 py-4 text-sm font-medium hover:bg-orange-600 transition-all shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/30 hover:-translate-y-0.5 animate-pulse-ring"
+              className="rounded-full bg-orange-500 text-white px-8 py-4 text-sm font-medium hover:bg-orange-600 transition-all shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/30 hover:-translate-y-0.5"
             >
               Get a Free Audit
             </a>

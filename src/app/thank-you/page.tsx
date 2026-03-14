@@ -35,10 +35,10 @@ export default function ThankYou() {
             <strong>24 hours</strong>.
           </p>
           <a
-            href="tel:+919145246464"
+            href="tel:+919850950259"
             className="inline-block mt-4 text-2xl sm:text-3xl font-bold hover:underline"
           >
-            +91 91452 46464
+            +91 98509 50259
           </a>
           <p className="text-sm text-gray-500 mt-1">
             Can&apos;t wait? Call us directly.
@@ -119,10 +119,10 @@ export default function ThankYou() {
       {/* CTA */}
       <section className="py-12 px-6 bg-gray-900 text-white text-center">
         <a
-          href="tel:+919145246464"
+          href="tel:+919850950259"
           className="text-2xl sm:text-3xl font-bold hover:underline"
         >
-          +91 91452 46464
+          +91 98509 50259
         </a>
         <p className="text-gray-400 mt-2 text-sm">
           Creometric &mdash; Digital Marketing Agency, Goa
