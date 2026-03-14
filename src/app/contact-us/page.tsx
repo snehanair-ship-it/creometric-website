@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
       {/* Hero */}
-      <section className="pt-32 pb-12 px-6 text-center">
+      <section className="pt-24 sm:pt-32 pb-12 px-6 text-center">
         <p className="text-sm font-medium text-orange-500 uppercase tracking-wide mb-3">
           Contact Us
         </p>
@@ -64,6 +64,7 @@ export default function Contact() {
               </div>
               <div className="inline-flex items-center gap-2 bg-orange-50 text-orange-700 rounded-full px-4 py-2 text-sm font-medium">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -82,8 +83,9 @@ export default function Contact() {
             </div>
 
             {/* Google Maps Placeholder */}
-            <div className="w-full aspect-video bg-gray-100 rounded-2xl border-2 border-dashed border-gray-300 flex flex-col items-center justify-center text-gray-400">
+            <div aria-label="Business location map" className="w-full aspect-video bg-gray-100 rounded-2xl border-2 border-dashed border-gray-300 flex flex-col items-center justify-center text-gray-400">
               <svg
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"

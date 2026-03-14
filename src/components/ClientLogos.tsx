@@ -16,7 +16,7 @@ export default function ClientLogos() {
         <p className="text-center text-sm font-medium text-gray-500 uppercase tracking-wide mb-8">
           Trusted by 20+ businesses across Goa
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6">
           {clients.map((client) => (
             <div
               key={client}

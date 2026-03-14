@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function PrivacyPolicy() {
   return (
     <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-24 sm:pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto prose prose-gray">
           <h1 className="text-4xl font-bold tracking-tight mb-8">
             Privacy Policy

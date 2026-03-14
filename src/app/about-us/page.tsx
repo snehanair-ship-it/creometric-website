@@ -17,7 +17,7 @@ export default function About() {
   return (
     <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
       {/* Hero */}
-      <section className="pt-32 pb-20 px-6 text-center">
+      <section className="pt-24 sm:pt-32 pb-20 px-6 text-center">
         <div className="max-w-3xl mx-auto">
           <p className="text-sm font-medium text-orange-500 uppercase tracking-wide mb-3">
             About Us
@@ -85,6 +85,7 @@ export default function About() {
               <div key={member.name} className="text-center">
                 <div className="w-full aspect-square bg-gray-200 rounded-2xl mb-4 flex items-center justify-center">
                   <svg
+                    aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"

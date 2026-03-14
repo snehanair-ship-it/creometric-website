@@ -34,7 +34,7 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="py-12 sm:py-20 px-6 bg-white">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
           Frequently Asked Questions
@@ -57,6 +57,7 @@ export default function FAQ() {
                   {faq.question}
                 </span>
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"

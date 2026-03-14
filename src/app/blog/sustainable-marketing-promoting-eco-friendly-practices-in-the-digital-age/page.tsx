@@ -9,7 +9,7 @@ export const metadata = {
 export default function SustainableMarketingBlogPost() {
   return (
     <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
-      <article className="pt-32 pb-20 px-6">
+      <article className="pt-24 sm:pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto">
           {/* Back link */}
           <Link

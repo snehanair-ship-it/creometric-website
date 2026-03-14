@@ -20,7 +20,7 @@ export default function ServicePageLayout({
   return (
     <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
       {/* Hero */}
-      <section className="pt-32 pb-16 px-6 text-center bg-gradient-to-b from-orange-50/50 to-white">
+      <section className="pt-24 sm:pt-32 pb-16 px-6 text-center bg-gradient-to-b from-orange-50/50 to-white">
         <p className="text-sm font-medium text-orange-500 uppercase tracking-wide mb-3">
           {subtitle}
         </p>

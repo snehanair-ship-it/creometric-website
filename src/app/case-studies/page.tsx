@@ -65,7 +65,7 @@ export default function CaseStudies() {
   return (
     <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
       {/* Hero */}
-      <section className="pt-32 pb-12 px-6 text-center">
+      <section className="pt-24 sm:pt-32 pb-12 px-6 text-center">
         <p className="text-sm font-medium text-orange-500 uppercase tracking-wide mb-3">
           Case Studies
         </p>
@@ -86,7 +86,7 @@ export default function CaseStudies() {
               key={study.client}
               className="rounded-2xl border border-gray-200 overflow-hidden"
             >
-              <div className="p-8 sm:p-10">
+              <div className="p-5 sm:p-8 md:p-10">
                 <div className="flex flex-wrap items-center gap-3 mb-4">
                   <span className="text-xs font-medium text-orange-600 bg-orange-50 px-3 py-1 rounded-full">
                     {study.industry}
@@ -102,7 +102,7 @@ export default function CaseStudies() {
                 <p className="text-gray-600 leading-relaxed mb-6">
                   {study.description}
                 </p>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {study.metrics.map((metric) => (
                     <div
                       key={metric.label}

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function ServicePage() {
   return (
     <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
-      <section className="pt-32 pb-4 px-6 text-center">
+      <section className="pt-24 sm:pt-32 pb-4 px-6 text-center">
         <p className="text-sm font-medium text-orange-500 uppercase tracking-wide mb-3">
           What We Do
         </p>

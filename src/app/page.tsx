@@ -99,7 +99,7 @@ export default function Home() {
           <p className="text-sm font-medium text-orange-500 uppercase tracking-widest mb-4">
             Digital Marketing Agency in Goa
           </p>
-          <h1 className="text-5xl sm:text-7xl font-bold tracking-tight text-balance">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-balance">
             We Help Brands
             <span className="text-orange-500"> Grow</span>
           </h1>

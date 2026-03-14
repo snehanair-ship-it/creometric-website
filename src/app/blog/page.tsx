@@ -9,6 +9,38 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "why-every-goa-business-needs-a-website-in-2025",
+    title: "Why Every Goa Business Needs a Website in 2025",
+    date: "March 10, 2025",
+    author: "Creometric",
+    excerpt:
+      "Still relying only on social media? Here's why a professional website is essential for every Goa business in 2025 — from credibility to lead generation.",
+  },
+  {
+    slug: "social-media-trends-to-watch-in-2025",
+    title: "Social Media Trends to Watch in 2025",
+    date: "March 1, 2025",
+    author: "Creometric",
+    excerpt:
+      "From short-form video to social commerce and AI-assisted content, discover the social media trends shaping digital marketing in 2025.",
+  },
+  {
+    slug: "how-to-measure-roi-on-your-digital-marketing-campaigns",
+    title: "How to Measure ROI on Your Digital Marketing Campaigns",
+    date: "February 10, 2025",
+    author: "Creometric",
+    excerpt:
+      "Learn how to track conversions, calculate ROAS, and use GA4 to measure the real return on your digital marketing investment.",
+  },
+  {
+    slug: "local-seo-tips-for-small-businesses-in-goa",
+    title: "Local SEO Tips for Small Businesses in Goa",
+    date: "January 15, 2025",
+    author: "Creometric",
+    excerpt:
+      "Practical local SEO strategies to help your Goa business rank higher on Google — from Google Business Profile to local citations and reviews.",
+  },
+  {
     slug: "sustainable-marketing-promoting-eco-friendly-practices-in-the-digital-age",
     title:
       "Sustainable Marketing: Promoting Eco-Friendly Practices in the Digital Age",
@@ -40,7 +72,7 @@ export default function Blog() {
   return (
     <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
       {/* Hero */}
-      <section className="pt-32 pb-12 px-6 text-center">
+      <section className="pt-24 sm:pt-32 pb-12 px-6 text-center">
         <p className="text-sm font-medium text-orange-500 uppercase tracking-wide mb-3">
           Blog
         </p>
