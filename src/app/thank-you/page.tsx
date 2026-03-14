@@ -83,33 +83,33 @@ export default function ThankYou() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <a
-              href="/blog/seo-tips-for-small-businesses"
+              href="/blog/the-intersection-of-ux-design-and-seo-creating-user-friendly-websites"
               className="block rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-shadow"
             >
               <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">
                 SEO
               </p>
               <h3 className="text-lg font-semibold mb-2">
-                10 SEO Tips Every Small Business in Goa Should Know
+                The Intersection of UX Design and SEO: Creating User-Friendly Websites
               </h3>
               <p className="text-sm text-gray-600">
-                Simple, actionable strategies to get your business found on
-                Google.
+                How UX design and SEO work together to create websites that rank
+                well.
               </p>
             </a>
             <a
-              href="/blog/social-media-strategy-2024"
+              href="/blog/sustainable-marketing-promoting-eco-friendly-practices-in-the-digital-age"
               className="block rounded-2xl border border-gray-200 p-6 hover:shadow-md transition-shadow"
             >
               <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">
-                Social Media
+                Marketing
               </p>
               <h3 className="text-lg font-semibold mb-2">
-                How to Build a Social Media Strategy That Actually Works
+                Sustainable Marketing: Promoting Eco-Friendly Practices in the Digital Age
               </h3>
               <p className="text-sm text-gray-600">
-                A step-by-step guide to growing your brand on Instagram and
-                Facebook.
+                How brands can adopt sustainable marketing practices in
+                today&apos;s digital landscape.
               </p>
             </a>
           </div>

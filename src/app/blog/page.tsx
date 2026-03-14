@@ -9,28 +9,30 @@ export const metadata: Metadata = {
 
 const posts = [
   {
-    slug: "importance-of-digital-marketing-for-businesses-in-goa",
-    title: "Importance of Digital Marketing for Businesses in Goa",
-    date: "January 15, 2025",
-    author: "Sneha Nair",
+    slug: "sustainable-marketing-promoting-eco-friendly-practices-in-the-digital-age",
+    title:
+      "Sustainable Marketing: Promoting Eco-Friendly Practices in the Digital Age",
+    date: "October 12, 2024",
+    author: "Creometric",
     excerpt:
-      "Discover why digital marketing is essential for businesses in Goa and how it can help you reach more customers, build brand awareness, and drive revenue growth.",
+      "Learn how brands can adopt sustainable marketing practices and promote eco-friendly initiatives in today's digital landscape.",
   },
   {
-    slug: "how-to-choose-the-right-social-media-platform-for-your-business",
-    title: "How to Choose the Right Social Media Platform for Your Business",
-    date: "December 8, 2024",
-    author: "Sneha Nair",
+    slug: "the-intersection-of-ux-design-and-seo-creating-user-friendly-websites",
+    title:
+      "The Intersection of UX Design and SEO: Creating User-Friendly Websites",
+    date: "September 28, 2024",
+    author: "Creometric",
     excerpt:
-      "Not every platform is right for every business. Learn how to pick the social media channels that will give you the best ROI based on your industry and audience.",
+      "Discover how UX design and SEO work together to create websites that rank well and deliver an exceptional user experience.",
   },
   {
-    slug: "top-seo-strategies-to-rank-higher-on-google-in-2025",
-    title: "Top SEO Strategies to Rank Higher on Google in 2025",
-    date: "November 22, 2024",
-    author: "Sneha Nair",
+    slug: "exploring-the-impact-of-voice-search-on-digital-marketing",
+    title: "Exploring the Impact of Voice Search on Digital Marketing",
+    date: "September 10, 2024",
+    author: "Creometric",
     excerpt:
-      "From local SEO to technical optimizations, here are the proven strategies that will help your website climb Google rankings this year.",
+      "Voice search is changing how people find information online. Here's how to adapt your digital marketing strategy for the voice-first era.",
   },
 ];
 
