@@ -46,31 +46,45 @@ export default function ThankYou() {
         </div>
       </section>
 
-      {/* Calendly Placeholder */}
+      {/* What Happens Next */}
       <section className="py-16 px-6 bg-gray-50">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-4">
-            Book a Call at Your Convenience
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-2xl font-bold text-center mb-10">
+            What Happens Next?
           </h2>
-          <p className="text-gray-600 mb-8">
-            Pick a time that works for you and we&apos;ll walk you through your
-            custom growth plan.
-          </p>
-          {/*
-            TODO: Replace this placeholder with your Calendly embed.
-            Example:
-            <div
-              className="calendly-inline-widget"
-              data-url="https://calendly.com/YOUR-LINK"
-              style={{ minWidth: 320, height: 700 }}
-            />
-            <script src="https://assets.calendly.com/assets/external/widget.js" async />
-          */}
-          <div className="border-2 border-dashed border-gray-300 rounded-2xl p-12 text-gray-400">
-            <p className="text-lg font-medium">Calendly Embed</p>
-            <p className="text-sm mt-1">
-              Add your Calendly URL here
-            </p>
+          <div className="space-y-6">
+            {[
+              {
+                step: "1",
+                title: "We Audit Your Website",
+                description:
+                  "Our team reviews your website, SEO, social presence, and competitors within a few hours.",
+              },
+              {
+                step: "2",
+                title: "We Build a Custom Plan",
+                description:
+                  "Based on the audit, we put together a tailored growth strategy with clear goals and timelines.",
+              },
+              {
+                step: "3",
+                title: "We Call You",
+                description:
+                  "Within 24 hours, we'll walk you through our findings and recommendations — no strings attached.",
+              },
+            ].map((item) => (
+              <div key={item.step} className="flex items-start gap-5">
+                <div className="w-10 h-10 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center text-sm font-bold shrink-0">
+                  {item.step}
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-1">{item.title}</h3>
+                  <p className="text-sm text-gray-500 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
