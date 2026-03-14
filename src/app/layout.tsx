@@ -5,6 +5,7 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Footer from "@/components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -70,6 +71,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
         <WhatsAppButton />
 
         {/* Google Tag Manager */}
