@@ -27,11 +27,10 @@ export default function Footer() {
           <div>
             <div className="mb-4">
               <Image
-                src="/images/logo.svg"
+                src="/images/logo-white.svg"
                 alt="Creometric"
                 width={140}
                 height={35}
-                className="brightness-0 invert"
               />
             </div>
             <p className="text-sm leading-relaxed mb-6">
