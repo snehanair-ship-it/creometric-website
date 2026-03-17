@@ -12,14 +12,20 @@ export default function LeadForm() {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    await fetch("/__forms.html", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
-    });
+    try {
+      const res = await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+      });
 
-    sendGAEvent("form_submission", { form_name: "lead-form" });
-    router.push("/thank-you");
+      if (!res.ok) throw new Error("Submission failed");
+
+      sendGAEvent("form_submission", { form_name: "lead-form" });
+      router.push("/thank-you");
+    } catch {
+      alert("Something went wrong. Please try again or call us directly.");
+    }
   }
 
   return (
@@ -35,6 +41,7 @@ export default function LeadForm() {
 
         <form onSubmit={handleSubmit} className="space-y-5">
           <input type="hidden" name="form-name" value="lead-form" />
+          <input type="text" name="bot-field" className="hidden" tabIndex={-1} autoComplete="off" aria-hidden="true" />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div>
