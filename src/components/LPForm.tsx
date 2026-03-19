@@ -19,10 +19,16 @@ export default function LPForm({
     const formData = new FormData(form);
 
     try {
-      const res = await fetch("/__forms.html", {
+      const res = await fetch("/api/submit-form", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          phone: formData.get("phone"),
+          email: formData.get("email"),
+          website: formData.get("website"),
+          formName,
+        }),
       });
 
       if (!res.ok) throw new Error("Submission failed");
@@ -49,8 +55,6 @@ export default function LPForm({
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      <input type="hidden" name="form-name" value={formName} />
-      <input type="text" name="bot-field" className="hidden" tabIndex={-1} autoComplete="off" aria-hidden="true" />
 
       <div>
         <label htmlFor={`${formName}-name`} className="sr-only">Your Name</label>

@@ -13,10 +13,16 @@ export default function LeadForm() {
     const formData = new FormData(form);
 
     try {
-      const res = await fetch("/__forms.html", {
+      const res = await fetch("/api/submit-form", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          phone: formData.get("phone"),
+          email: formData.get("email"),
+          website: formData.get("website"),
+          formName: "lead-form",
+        }),
       });
 
       if (!res.ok) throw new Error("Submission failed");
@@ -64,8 +70,6 @@ export default function LeadForm() {
           <div className="rounded-2xl bg-[#1A1A1A] border border-[#2A2A2A] p-8 lg:p-10">
             <h3 className="text-xl font-bold text-white font-sora mb-6">Request Your Free Audit</h3>
             <form onSubmit={handleSubmit} className="space-y-5">
-              <input type="hidden" name="form-name" value="lead-form" />
-              <input type="text" name="bot-field" className="hidden" tabIndex={-1} autoComplete="off" aria-hidden="true" />
 
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-[#8A8A8A] mb-2 font-inter">
