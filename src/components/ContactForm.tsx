@@ -12,21 +12,18 @@ export default function ContactForm() {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
+    formData.append("access_key", "03c25fe0-b587-4406-bc6d-c33112140ce0");
+    formData.append("subject", "New Contact — Creometric Website");
+    formData.append("from_name", "Creometric Website");
+
     try {
-      const res = await fetch("/api/submit-form", {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: formData.get("name"),
-          phone: formData.get("phone"),
-          email: formData.get("email"),
-          website: formData.get("website"),
-          message: formData.get("message"),
-          formName: "contact-form",
-        }),
+        body: formData,
       });
 
-      if (!res.ok) throw new Error("Submission failed");
+      const result = await res.json();
+      if (!result.success) throw new Error("Submission failed");
 
       sendGAEvent("form_submission", { form_name: "contact-form" });
       router.push("/thank-you");
