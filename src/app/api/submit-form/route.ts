@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const NOTIFY_EMAIL = "sales@kilowott.com";
+const WEB3FORMS_KEY = "03c25fe0-b587-4406-bc6d-c33112140ce0";
 
 export async function POST(req: NextRequest) {
   try {
@@ -15,7 +15,6 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Simple email validation
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       return NextResponse.json(
         { error: "Invalid email address." },
@@ -23,37 +22,41 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Send email notification via Formsubmit.co (works immediately, no API key needed)
-    const formsubmitRes = await fetch(`https://formsubmit.co/ajax/${NOTIFY_EMAIL}`, {
+    // Send via Web3Forms
+    const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
       body: JSON.stringify({
-        _subject: `New Lead: ${name} — ${formName || "Website Form"}`,
-        Name: name,
-        Phone: phone,
-        Email: email,
-        Website: website || "Not provided",
-        Message: message || "No message",
-        "Form Source": formName || "Unknown",
-        _template: "table",
+        access_key: WEB3FORMS_KEY,
+        subject: `New Lead: ${name} — ${formName || "Website Form"}`,
+        from_name: "Creometric Website",
+        name,
+        phone,
+        email,
+        website: website || "Not provided",
+        message: message || "No message",
+        form_source: formName || "Unknown",
       }),
     });
 
-    if (!formsubmitRes.ok) {
-      console.error("Formsubmit error:", await formsubmitRes.text());
+    const result = await res.json();
+
+    if (!result.success) {
+      console.error("Web3Forms error:", result);
+      return NextResponse.json(
+        { error: "Submission failed. Please try again." },
+        { status: 500 }
+      );
     }
 
-    // Log submission (always visible in Vercel logs)
     console.log("Form submission:", {
       formName,
       name,
       phone,
       email,
-      website,
-      message: message ? message.substring(0, 100) : "",
       timestamp: new Date().toISOString(),
     });
 
