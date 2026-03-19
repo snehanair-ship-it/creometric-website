@@ -6,27 +6,27 @@ const faqs = [
   {
     question: "How much does digital marketing cost in Goa?",
     answer:
-      "Basic packages for small businesses start around \u20B915,000\u2013\u20B925,000 per month for SEO or social media management. Comprehensive strategies covering SEO, PPC, social media and content marketing typically range from \u20B940,000\u2013\u20B91,00,000+ per month. Contact us for a free audit and custom quote.",
+      "Basic packages start around \u20B915,000\u2013\u20B925,000/month. Comprehensive strategies range from \u20B940,000\u2013\u20B91,00,000+/month depending on goals and scope.",
   },
   {
     question: "How long does SEO take to show results?",
     answer:
-      "Most businesses start seeing measurable improvements in organic traffic and rankings within 3\u20136 months. Competitive industries may take 6\u201312 months. We provide monthly reports so you can track progress from day one.",
+      "Most businesses see measurable improvements within 3\u20136 months. Competitive industries may take 6\u201312 months for significant results.",
   },
   {
     question: "What services does Creometric offer?",
     answer:
-      "We offer SEO, Social Media Management, PPC / Google Ads, Website Design & Development, Content Marketing, and Web Analytics. We serve local businesses in Goa and clients across India.",
+      "SEO, Social Media Management, PPC/Google Ads, Website Design, Content Marketing, and Web Analytics \u2014 all under one roof.",
   },
   {
     question: "Do you work with businesses outside Goa?",
     answer:
-      "Yes! While we\u2019re based in Goa, we work with clients across India and internationally. All our services can be delivered remotely with regular video calls and reporting.",
+      "Absolutely! While we\u2019re based in Goa, we work with clients across India and globally through our parent company Kilowott.",
   },
   {
-    question: "What makes Creometric different from other agencies?",
+    question: "What makes Creometric different?",
     answer:
-      "We\u2019re a results-first agency. Every strategy is backed by data, and we measure success by your ROI \u2014 not vanity metrics. With 7+ years in the industry and 250+ projects completed, we know what works.",
+      "We\u2019re backed by Kilowott\u2019s full-stack capabilities \u2014 software, design, and marketing. No vanity metrics, just transparent ROI-focused strategies.",
   },
 ];
 
@@ -34,53 +34,65 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="py-12 sm:py-20 px-6 bg-white">
+    <section className="py-20 sm:py-28 px-6 bg-[#0A0A0A]" aria-labelledby="faq-heading">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
-          Frequently Asked Questions
-        </h2>
-        <p className="text-gray-600 text-center mb-12">
-          Got questions? We&apos;ve got answers.
-        </p>
+        <div className="text-center mb-16">
+          <div className="flex flex-col items-center gap-4 mb-6">
+            <div className="w-10 h-[3px] bg-orange-500 rounded-full" />
+            <span className="text-xs font-bold text-orange-500 uppercase tracking-[0.2em] font-inter">
+              FAQ
+            </span>
+          </div>
+          <h2 id="faq-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight font-sora" style={{ letterSpacing: "-0.025em" }}>
+            Frequently Asked Questions
+          </h2>
+        </div>
 
-        <div className="space-y-3">
-          {faqs.map((faq, i) => (
-            <div
-              key={i}
-              className="border border-gray-200 rounded-xl overflow-hidden"
-            >
-              <button
-                onClick={() => setOpen(open === i ? null : i)}
-                className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-gray-50 transition-colors"
-              >
-                <span className="font-medium text-sm sm:text-base pr-4">
-                  {faq.question}
-                </span>
-                <svg
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className={`w-5 h-5 shrink-0 transition-transform ${
-                    open === i ? "rotate-180" : ""
-                  }`}
+        <div className="space-y-0 divide-y divide-[#1A1A1A]">
+          {faqs.map((faq, i) => {
+            const isOpen = open === i;
+            const panelId = `faq-panel-${i}`;
+            const buttonId = `faq-button-${i}`;
+
+            return (
+              <div key={i}>
+                <button
+                  id={buttonId}
+                  onClick={() => setOpen(isOpen ? null : i)}
+                  aria-expanded={isOpen}
+                  aria-controls={panelId}
+                  className="w-full flex items-center justify-between py-6 text-left focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500 rounded-sm"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                  />
-                </svg>
-              </button>
-              {open === i && (
-                <div className="px-6 pb-4 text-sm text-gray-600 leading-relaxed">
-                  {faq.answer}
+                  <span className="font-semibold text-base text-white pr-4 font-inter">
+                    {faq.question}
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className={`w-5 h-5 shrink-0 text-[#525252] transition-transform ${isOpen ? "rotate-45" : ""}`}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                </button>
+                <div
+                  id={panelId}
+                  role="region"
+                  aria-labelledby={buttonId}
+                  hidden={!isOpen}
+                >
+                  {isOpen && (
+                    <div className="pb-6 text-sm text-[#8A8A8A] leading-relaxed font-inter" style={{ lineHeight: "1.6" }}>
+                      {faq.answer}
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
-          ))}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

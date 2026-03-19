@@ -18,16 +18,16 @@ export default function ServicePageLayout({
   faq,
 }: ServicePageProps) {
   return (
-    <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-[#0A0A0A] text-white">
       {/* Hero */}
-      <section className="pt-24 sm:pt-32 pb-16 px-6 text-center bg-gradient-to-b from-orange-50/50 to-white">
+      <section className="pt-24 sm:pt-32 pb-16 px-6 text-center bg-[#0A0A0A]">
         <p className="text-sm font-medium text-orange-500 uppercase tracking-wide mb-3">
           {subtitle}
         </p>
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6 max-w-3xl mx-auto">
           {title}
         </h1>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg text-[#8A8A8A] max-w-2xl mx-auto leading-relaxed">
           {description}
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
@@ -39,7 +39,7 @@ export default function ServicePageLayout({
           </Link>
           <a
             href="tel:+919850950259"
-            className="rounded-full border border-gray-300 px-8 py-3.5 text-sm font-medium hover:bg-gray-50 transition-colors"
+            className="rounded-full border border-[#2A2A2A] px-8 py-3.5 text-sm font-medium hover:bg-[#0F0F0F] transition-colors"
           >
             Call Us Now
           </a>
@@ -55,12 +55,12 @@ export default function ServicePageLayout({
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {benefits.map((benefit, i) => (
               <div key={i} className="flex gap-3">
-                <div className="shrink-0 w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center mt-0.5">
+                <div className="shrink-0 w-6 h-6 rounded-full bg-orange-500/15 flex items-center justify-center mt-0.5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    className="w-3.5 h-3.5 text-orange-600"
+                    className="w-3.5 h-3.5 text-orange-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -69,7 +69,7 @@ export default function ServicePageLayout({
                     />
                   </svg>
                 </div>
-                <p className="text-gray-700 text-sm leading-relaxed">
+                <p className="text-[#8A8A8A] text-sm leading-relaxed">
                   {benefit}
                 </p>
               </div>
@@ -79,7 +79,7 @@ export default function ServicePageLayout({
       </section>
 
       {/* Process */}
-      <section className="py-16 px-6 bg-gray-50">
+      <section className="py-16 px-6 bg-[#0F0F0F]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold text-center mb-10">
             Our Process
@@ -92,7 +92,7 @@ export default function ServicePageLayout({
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">{step.step}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
+                  <p className="text-[#8A8A8A] text-sm leading-relaxed">
                     {step.description}
                   </p>
                 </div>
@@ -110,9 +110,9 @@ export default function ServicePageLayout({
           </h2>
           <div className="space-y-4">
             {faq.map((item, i) => (
-              <div key={i} className="border border-gray-200 rounded-xl p-6">
+              <div key={i} className="border border-[#2A2A2A] rounded-xl p-6">
                 <h3 className="font-semibold mb-2">{item.q}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-[#8A8A8A] text-sm leading-relaxed">
                   {item.a}
                 </p>
               </div>
@@ -129,7 +129,7 @@ export default function ServicePageLayout({
         </p>
         <Link
           href="/contact-us/"
-          className="inline-block rounded-full bg-white text-orange-600 px-8 py-3 text-sm font-semibold hover:bg-orange-50 transition-colors"
+          className="inline-block rounded-full bg-[#1A1A1A] text-orange-500 px-8 py-3 text-sm font-semibold hover:bg-orange-500/10 transition-colors"
         >
           Book a Free Consultation
         </Link>

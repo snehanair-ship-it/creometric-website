@@ -8,19 +8,19 @@ export const metadata = {
 
 export default function SustainableMarketingBlogPost() {
   return (
-    <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-[#0A0A0A] text-white">
       <article className="pt-24 sm:pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto">
           {/* Back link */}
           <Link
             href="/blog/"
-            className="text-sm text-orange-600 hover:text-orange-700 transition-colors inline-flex items-center gap-1 mb-8"
+            className="text-sm text-orange-500 hover:text-orange-500 transition-colors inline-flex items-center gap-1 mb-8"
           >
             &larr; Back to Blog
           </Link>
 
           {/* Meta info */}
-          <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
+          <div className="flex items-center gap-4 text-sm text-[#525252] mb-4">
             <time dateTime="2024-10-12">October 12, 2024</time>
             <span>|</span>
             <span>Creometric Team</span>
@@ -32,7 +32,7 @@ export default function SustainableMarketingBlogPost() {
           </h1>
 
           {/* Article body */}
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+          <div className="prose prose-lg max-w-none text-[#8A8A8A] space-y-6">
             <p>
               Consumers today are more environmentally conscious than ever before. A growing number of buyers actively seek out brands that align with their values, particularly when it comes to sustainability and environmental responsibility. For businesses looking to build lasting relationships with their audience, sustainable marketing is no longer optional — it is essential.
             </p>
@@ -40,7 +40,7 @@ export default function SustainableMarketingBlogPost() {
               At Creometric, we work with brands across industries to craft digital marketing strategies that are not only effective but also mindful of their environmental footprint. Based in Goa, India, we have seen firsthand how businesses that embrace eco-friendly practices earn deeper trust and stronger loyalty from their customers. In this article, we explore what sustainable marketing means, why it matters, and how you can integrate it into your digital strategy.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               What Is Sustainable Marketing?
             </h2>
             <p>
@@ -50,7 +50,7 @@ export default function SustainableMarketingBlogPost() {
               This approach touches every part of the marketing funnel: from the messaging you craft and the platforms you choose to the partnerships you form and the content you produce. The goal is to communicate your brand&apos;s commitment to sustainability in an honest and compelling way that resonates with modern consumers.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               Why Sustainable Marketing Matters for Your Brand
             </h2>
             <p>
@@ -74,49 +74,49 @@ export default function SustainableMarketingBlogPost() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               Practical Ways to Integrate Sustainability Into Your Digital Marketing
             </h2>
             <p>
               Adopting sustainable marketing does not require a complete overhaul of your strategy. Small, intentional changes can make a meaningful difference. Here are actionable steps you can take:
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               1. Optimise Your Website for Energy Efficiency
             </h2>
             <p>
               Every website consumes energy through the servers that host it and the devices that access it. A bloated, slow-loading site uses more energy per visit than a lean, optimised one. Compress images, minify code, reduce unnecessary scripts, and choose a green hosting provider that runs on renewable energy. These improvements benefit both your carbon footprint and your SEO rankings, since page speed is a confirmed ranking factor.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               2. Create Evergreen Content
             </h2>
             <p>
               Content that remains relevant over time reduces the need for constant production cycles. Instead of churning out disposable posts, invest in high-quality evergreen articles, guides, and resources that continue to attract traffic for months or years. This approach reduces digital waste while maximising the return on your content investment.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               3. Be Transparent About Your Efforts
             </h2>
             <p>
               Authenticity is the cornerstone of sustainable marketing. Share your sustainability journey honestly, including the challenges you face and the areas where you are still improving. Consumers appreciate transparency far more than perfection. Publish sustainability reports, share behind-the-scenes content, and invite your audience to be part of the conversation.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               4. Leverage Digital Over Print
             </h2>
             <p>
               Whenever possible, prioritise digital channels over physical ones. Email campaigns, social media marketing, and digital advertising all have a significantly lower environmental impact compared to printed brochures, flyers, and direct mail. When print is necessary, choose recycled materials and eco-friendly inks.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               5. Partner With Like-Minded Brands
             </h2>
             <p>
               Collaboration amplifies impact. Seek partnerships with other businesses and organisations that share your commitment to sustainability. Co-branded campaigns, joint events, and shared content initiatives can help you reach new audiences while reinforcing your environmental values.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               Avoiding the Greenwashing Trap
             </h2>
             <p>
@@ -129,7 +129,7 @@ export default function SustainableMarketingBlogPost() {
               <li>Focus on progress, not perfection, and communicate your roadmap.</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               The Role of a Digital Marketing Agency in Sustainable Practices
             </h2>
             <p>
@@ -139,7 +139,7 @@ export default function SustainableMarketingBlogPost() {
               We help our clients audit their digital presence for energy efficiency, craft genuine sustainability narratives, and build campaigns that drive results while respecting the planet. Whether you are a startup exploring your first green initiative or an established brand looking to deepen your commitment, we can help you find the right approach.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               Looking Ahead
             </h2>
             <p>
@@ -151,11 +151,11 @@ export default function SustainableMarketingBlogPost() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 bg-gray-50 rounded-2xl text-center">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+          <div className="mt-16 p-8 bg-[#0F0F0F] rounded-2xl text-center">
+            <h2 className="text-2xl font-bold text-white mb-3">
               Ready to Build a Sustainable Marketing Strategy?
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="text-[#8A8A8A] mb-6">
               Let Creometric help you craft campaigns that drive results and respect the planet. Get in touch with our team today.
             </p>
             <Link

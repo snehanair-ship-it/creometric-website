@@ -37,7 +37,7 @@ export default function ContactForm() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
-          <label htmlFor="contact-name" className="block text-sm font-medium mb-1">
+          <label htmlFor="contact-name" className="block text-sm font-medium text-[#8A8A8A] mb-2 font-inter">
             Your Name *
           </label>
           <input
@@ -45,12 +45,12 @@ export default function ContactForm() {
             id="contact-name"
             name="name"
             required
-            className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+            className="w-full rounded-lg border border-[#2A2A2A] bg-[#242424] px-4 py-3 text-sm text-white placeholder-[#525252] focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent font-inter"
             placeholder="John Doe"
           />
         </div>
         <div>
-          <label htmlFor="contact-phone" className="block text-sm font-medium mb-1">
+          <label htmlFor="contact-phone" className="block text-sm font-medium text-[#8A8A8A] mb-2 font-inter">
             Phone Number *
           </label>
           <input
@@ -58,14 +58,14 @@ export default function ContactForm() {
             id="contact-phone"
             name="phone"
             required
-            className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+            className="w-full rounded-lg border border-[#2A2A2A] bg-[#242424] px-4 py-3 text-sm text-white placeholder-[#525252] focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent font-inter"
             placeholder="+91 98765 43210"
           />
         </div>
       </div>
 
       <div>
-        <label htmlFor="contact-email" className="block text-sm font-medium mb-1">
+        <label htmlFor="contact-email" className="block text-sm font-medium text-[#8A8A8A] mb-2 font-inter">
           Email Address *
         </label>
         <input
@@ -73,40 +73,40 @@ export default function ContactForm() {
           id="contact-email"
           name="email"
           required
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+          className="w-full rounded-lg border border-[#2A2A2A] bg-[#242424] px-4 py-3 text-sm text-white placeholder-[#525252] focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent font-inter"
           placeholder="john@example.com"
         />
       </div>
 
       <div>
-        <label htmlFor="contact-website" className="block text-sm font-medium mb-1">
+        <label htmlFor="contact-website" className="block text-sm font-medium text-[#8A8A8A] mb-2 font-inter">
           Website URL
         </label>
         <input
           type="url"
           id="contact-website"
           name="website"
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+          className="w-full rounded-lg border border-[#2A2A2A] bg-[#242424] px-4 py-3 text-sm text-white placeholder-[#525252] focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent font-inter"
           placeholder="https://yourbusiness.com"
         />
       </div>
 
       <div>
-        <label htmlFor="contact-message" className="block text-sm font-medium mb-1">
+        <label htmlFor="contact-message" className="block text-sm font-medium text-[#8A8A8A] mb-2 font-inter">
           Tell us about your project
         </label>
         <textarea
           id="contact-message"
           name="message"
           rows={5}
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent resize-none"
+          className="w-full rounded-lg border border-[#2A2A2A] bg-[#242424] px-4 py-3 text-sm text-white placeholder-[#525252] focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent resize-none font-inter"
           placeholder="What can we help you with?"
         />
       </div>
 
       <button
         type="submit"
-        className="w-full rounded-full bg-gray-900 text-white py-3 text-sm font-medium hover:bg-gray-700 transition-colors"
+        className="w-full rounded-lg bg-gradient-to-b from-orange-500 to-orange-600 text-white py-3.5 text-sm font-semibold hover:from-orange-400 hover:to-orange-500 transition-all shadow-lg shadow-orange-500/25 font-inter"
       >
         Send Message
       </button>

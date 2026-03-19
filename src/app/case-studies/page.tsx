@@ -63,7 +63,7 @@ const caseStudies = [
 
 export default function CaseStudies() {
   return (
-    <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-[#0A0A0A] text-white">
       {/* Hero */}
       <section className="pt-24 sm:pt-32 pb-12 px-6 text-center">
         <p className="text-sm font-medium text-orange-500 uppercase tracking-wide mb-3">
@@ -72,7 +72,7 @@ export default function CaseStudies() {
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
           Real Results. Real Businesses.
         </h1>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="text-lg text-[#8A8A8A] max-w-2xl mx-auto">
           See how we&apos;ve helped businesses across Goa achieve measurable
           growth through digital marketing.
         </p>
@@ -84,34 +84,34 @@ export default function CaseStudies() {
           {caseStudies.map((study) => (
             <div
               key={study.client}
-              className="rounded-2xl border border-gray-200 overflow-hidden"
+              className="rounded-2xl border border-[#2A2A2A] overflow-hidden"
             >
               <div className="p-5 sm:p-8 md:p-10">
                 <div className="flex flex-wrap items-center gap-3 mb-4">
-                  <span className="text-xs font-medium text-orange-600 bg-orange-50 px-3 py-1 rounded-full">
+                  <span className="text-xs font-medium text-orange-500 bg-orange-500/10 px-3 py-1 rounded-full">
                     {study.industry}
                   </span>
-                  <span className="text-xs font-medium text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+                  <span className="text-xs font-medium text-[#525252] bg-[#1A1A1A] px-3 py-1 rounded-full">
                     {study.service}
                   </span>
                 </div>
                 <h2 className="text-2xl font-bold mb-2">{study.client}</h2>
-                <p className="text-orange-600 font-medium mb-4">
+                <p className="text-orange-500 font-medium mb-4">
                   {study.result}
                 </p>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-[#8A8A8A] leading-relaxed mb-6">
                   {study.description}
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {study.metrics.map((metric) => (
                     <div
                       key={metric.label}
-                      className="text-center bg-gray-50 rounded-xl p-4"
+                      className="text-center bg-[#0F0F0F] rounded-xl p-4"
                     >
-                      <p className="text-2xl font-bold text-gray-900">
+                      <p className="text-2xl font-bold text-white">
                         {metric.value}
                       </p>
-                      <p className="text-xs text-gray-500 mt-1">
+                      <p className="text-xs text-[#525252] mt-1">
                         {metric.label}
                       </p>
                     </div>
@@ -133,7 +133,7 @@ export default function CaseStudies() {
         </p>
         <a
           href="/contact-us/"
-          className="inline-block rounded-full bg-white text-orange-600 px-8 py-3 text-sm font-semibold hover:bg-orange-50 transition-colors"
+          className="inline-block rounded-full bg-[#1A1A1A] text-orange-500 px-8 py-3 text-sm font-semibold hover:bg-orange-500/10 transition-colors"
         >
           Get Your Free Audit
         </a>

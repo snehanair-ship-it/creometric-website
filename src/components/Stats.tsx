@@ -3,9 +3,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const stats = [
-  { target: 347, suffix: "+", label: "People Reached" },
-  { target: 250, suffix: "+", label: "Projects Completed" },
-  { target: 284000, suffix: "", label: "Clicks Grabbed", format: "indian" as const },
+  { target: 347, suffix: "K+", label: "People Reached" },
+  { target: 250, suffix: "+", label: "Projects Delivered" },
+  { target: 284000, suffix: "", label: "Clicks Generated", format: "indian" as const },
   { target: 5, suffix: " Cr+", label: "ROI Generated" },
 ];
 
@@ -35,7 +35,6 @@ function useCountUp(target: number, duration = 2000) {
     function animate(now: number) {
       const elapsed = now - startTime;
       const progress = Math.min(elapsed / duration, 1);
-      // Ease-out curve for smooth deceleration
       const eased = 1 - Math.pow(1 - progress, 3);
       setCount(eased * target);
 
@@ -70,11 +69,13 @@ function useCountUp(target: number, duration = 2000) {
 
 export default function Stats() {
   return (
-    <section className="py-16 px-6 bg-gray-900 text-white">
-      <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        {stats.map((item) => (
-          <StatItem key={item.label} {...item} />
-        ))}
+    <section className="py-16 sm:py-20 px-6 bg-[#0F0F0F] relative overflow-hidden">
+      <div className="max-w-6xl mx-auto relative z-10">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-0 divide-x divide-[#2A2A2A]">
+          {stats.map((item, i) => (
+            <StatItem key={item.label} {...item} isFirst={i === 0} />
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -85,21 +86,30 @@ function StatItem({
   suffix,
   label,
   format,
+  isFirst,
 }: {
   target: number;
   suffix: string;
   label: string;
   format?: "indian";
+  isFirst?: boolean;
 }) {
   const { count, ref } = useCountUp(target);
 
   return (
-    <div ref={ref}>
-      <p className="text-3xl sm:text-4xl font-bold text-orange-400 tabular-nums">
-        {formatNumber(count, format)}
-        {suffix}
+    <div ref={ref} className="text-center py-8 px-4">
+      <p className="text-3xl sm:text-4xl lg:text-5xl font-bold tabular-nums tracking-tight font-sora">
+        {isFirst ? (
+          <span className="bg-gradient-to-r from-orange-500 to-amber-400 bg-clip-text text-transparent">
+            {formatNumber(count, format)}{suffix}
+          </span>
+        ) : (
+          <span className="text-white">
+            {formatNumber(count, format)}{suffix}
+          </span>
+        )}
       </p>
-      <p className="text-sm text-gray-400 mt-1">{label}</p>
+      <p className="text-sm text-[#525252] mt-2 font-medium font-inter">{label}</p>
     </div>
   );
 }

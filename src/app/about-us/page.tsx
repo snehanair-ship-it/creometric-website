@@ -83,11 +83,11 @@ const capabilities = [
 
 export default function About() {
   return (
-    <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-[#0A0A0A] text-white">
       {/* Hero */}
       <section className="pt-24 sm:pt-32 pb-20 px-6 text-center relative overflow-hidden">
         {/* Subtle gradient backdrop */}
-        <div className="absolute inset-0 bg-gradient-to-b from-orange-50/50 via-white to-white" />
+        <div className="absolute inset-0 bg-[#0A0A0A]" />
         <div className="relative z-10 max-w-3xl mx-auto">
           <p className="text-sm font-medium text-orange-500 uppercase tracking-widest mb-4">
             About Creometric
@@ -95,13 +95,13 @@ export default function About() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6">
             Powering Impactful Results
           </h1>
-          <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-lg text-[#8A8A8A] leading-relaxed max-w-2xl mx-auto">
             Creometric is the digital marketing arm of{" "}
             <a
               href="https://kilowott.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-orange-500 hover:text-orange-600 transition-colors font-medium"
+              className="text-orange-500 hover:text-orange-500 transition-colors font-medium"
             >
               Kilowott
             </a>
@@ -113,7 +113,7 @@ export default function About() {
       </section>
 
       {/* Our Story — timeline style */}
-      <section className="py-16 px-6 bg-gray-50">
+      <section className="py-16 px-6 bg-[#0F0F0F]">
         <div className="max-w-4xl mx-auto">
           <p className="text-sm font-medium text-orange-500 uppercase tracking-widest text-center mb-3">
             Our Story
@@ -169,7 +169,7 @@ export default function About() {
                     {item.year}
                   </span>
                   <h3 className="text-lg font-semibold mt-1 mb-1">{item.title}</h3>
-                  <p className="text-sm text-gray-500 leading-relaxed">
+                  <p className="text-sm text-[#525252] leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -185,29 +185,29 @@ export default function About() {
       {/* Mission & Approach — asymmetric cards */}
       <section className="py-16 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="rounded-2xl border border-gray-200/60 bg-gradient-to-br from-white to-gray-50/50 p-8 sm:p-10">
-            <div className="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center mb-5">
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-orange-600">
+          <div className="rounded-2xl border border-[#2A2A2A]/60 bg-gradient-to-br from-white to-gray-50/50 p-8 sm:p-10">
+            <div className="w-10 h-10 rounded-lg bg-orange-500/15 flex items-center justify-center mb-5">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-orange-500">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
               </svg>
             </div>
             <h2 className="text-xl font-bold mb-3">Our Mission</h2>
-            <p className="text-gray-600 leading-relaxed text-sm">
+            <p className="text-[#8A8A8A] leading-relaxed text-sm">
               To empower businesses with data-driven digital strategies that
               deliver measurable growth. We combine creativity with analytics to
               build marketing that actually works — ensuring every campaign
               drives tangible business outcomes.
             </p>
           </div>
-          <div className="rounded-2xl border border-gray-200/60 bg-gradient-to-br from-white to-gray-50/50 p-8 sm:p-10">
-            <div className="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center mb-5">
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-orange-600">
+          <div className="rounded-2xl border border-[#2A2A2A]/60 bg-gradient-to-br from-white to-gray-50/50 p-8 sm:p-10">
+            <div className="w-10 h-10 rounded-lg bg-orange-500/15 flex items-center justify-center mb-5">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-orange-500">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
               </svg>
             </div>
             <h2 className="text-xl font-bold mb-3">Our Approach</h2>
-            <p className="text-gray-600 leading-relaxed text-sm">
+            <p className="text-[#8A8A8A] leading-relaxed text-sm">
               We don&apos;t believe in cookie-cutter solutions. Every business
               gets a tailored strategy built around their unique goals, audience,
               and budget. Backed by Kilowott&apos;s full-stack capabilities in
@@ -229,7 +229,7 @@ export default function About() {
           ].map((item) => (
             <div key={item.label}>
               <p className="text-3xl sm:text-4xl font-bold text-orange-400">{item.stat}</p>
-              <p className="text-sm text-gray-400 mt-1">{item.label}</p>
+              <p className="text-sm text-[#525252] mt-1">{item.label}</p>
             </div>
           ))}
         </div>
@@ -248,13 +248,13 @@ export default function About() {
             {capabilities.map((cap) => (
               <span
                 key={cap}
-                className="px-5 py-2.5 rounded-full border border-gray-200 text-sm text-gray-700 hover:border-orange-300 hover:text-orange-600 transition-colors duration-300"
+                className="px-5 py-2.5 rounded-full border border-[#2A2A2A] text-sm text-[#8A8A8A] hover:border-orange-300 hover:text-orange-500 transition-colors duration-300"
               >
                 {cap}
               </span>
             ))}
           </div>
-          <p className="text-gray-500 text-sm mt-8 max-w-xl mx-auto">
+          <p className="text-[#525252] text-sm mt-8 max-w-xl mx-auto">
             Plus access to Kilowott&apos;s full ecosystem — software
             development, UI/UX design, animation, and consulting — for
             truly integrated digital solutions.
@@ -263,7 +263,7 @@ export default function About() {
       </section>
 
       {/* How We Work — process steps */}
-      <section className="py-16 sm:py-24 px-6 bg-gray-50">
+      <section className="py-16 sm:py-24 px-6 bg-[#0F0F0F]">
         <div className="max-w-5xl mx-auto">
           <p className="text-sm font-medium text-orange-500 uppercase tracking-widest text-center mb-3">
             How We Work
@@ -279,8 +279,8 @@ export default function About() {
             {process.map((item) => (
               <div key={item.step} className="relative text-center group">
                 {/* Step icon box */}
-                <div className="w-20 h-20 rounded-2xl bg-white border border-gray-200 group-hover:border-orange-300 mx-auto mb-6 flex items-center justify-center transition-colors duration-300 relative z-10">
-                  <div className="text-gray-400 group-hover:text-orange-500 transition-colors duration-300">
+                <div className="w-20 h-20 rounded-2xl bg-[#1A1A1A] border border-[#2A2A2A] group-hover:border-orange-300 mx-auto mb-6 flex items-center justify-center transition-colors duration-300 relative z-10">
+                  <div className="text-[#525252] group-hover:text-orange-500 transition-colors duration-300">
                     {item.icon}
                   </div>
                 </div>
@@ -288,7 +288,7 @@ export default function About() {
                   {item.step}
                 </span>
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">
+                <p className="text-[#525252] text-sm leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -310,12 +310,12 @@ export default function About() {
             {values.map((v) => (
               <div
                 key={v.title}
-                className="flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200/60 hover:border-orange-200 transition-colors duration-300"
+                className="flex items-start gap-4 p-6 rounded-xl bg-[#1A1A1A] border border-[#2A2A2A]/60 hover:border-orange-200 transition-colors duration-300"
               >
                 <div className="w-2 h-2 rounded-full bg-orange-400 mt-2 shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-1">{v.title}</h3>
-                  <p className="text-sm text-gray-500">{v.description}</p>
+                  <p className="text-sm text-[#525252]">{v.description}</p>
                 </div>
               </div>
             ))}
@@ -324,7 +324,7 @@ export default function About() {
       </section>
 
       {/* Part of Kilowott — badge section */}
-      <section className="py-16 px-6 bg-gray-50">
+      <section className="py-16 px-6 bg-[#0F0F0F]">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-900 text-white text-xs font-medium mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-orange-400" />
@@ -333,14 +333,14 @@ export default function About() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">
             Backed by a Global Ecosystem
           </h2>
-          <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-[#8A8A8A] leading-relaxed max-w-2xl mx-auto">
             As part of Kilowott, Creometric has access to capabilities most
             agencies can only dream of — from custom software development and
             app engineering to animation and UI/UX design. When you work with
             us, you get the agility of a focused marketing team with the
             firepower of a full-scale digital firm.
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-3 text-xs text-gray-500">
+          <div className="mt-8 flex flex-wrap justify-center gap-3 text-xs text-[#525252]">
             {[
               "Nordics",
               "EU",
@@ -350,7 +350,7 @@ export default function About() {
             ].map((region) => (
               <span
                 key={region}
-                className="px-3 py-1.5 rounded-full border border-gray-200 bg-white"
+                className="px-3 py-1.5 rounded-full border border-[#2A2A2A] bg-[#1A1A1A]"
               >
                 {region}
               </span>
@@ -362,7 +362,7 @@ export default function About() {
       {/* CTA */}
       <section className="py-20 px-6 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ready to Grow Your Brand?</h2>
-        <p className="text-gray-600 mb-8 max-w-lg mx-auto">
+        <p className="text-[#8A8A8A] mb-8 max-w-lg mx-auto">
           Let&apos;s build something great together. No contracts, no
           commitments — just results.
         </p>

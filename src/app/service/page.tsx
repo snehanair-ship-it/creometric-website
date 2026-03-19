@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function ServicePage() {
   return (
-    <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-[#0A0A0A] text-white">
       <section className="pt-24 sm:pt-32 pb-4 px-6 text-center">
         <p className="text-sm font-medium text-orange-500 uppercase tracking-wide mb-3">
           What We Do
@@ -17,7 +17,7 @@ export default function ServicePage() {
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
           Our Services
         </h1>
-        <p className="text-lg text-gray-600 max-w-xl mx-auto">
+        <p className="text-lg text-[#8A8A8A] max-w-xl mx-auto">
           Full-service digital marketing solutions tailored to help your
           business grow.
         </p>
@@ -30,7 +30,7 @@ export default function ServicePage() {
         <h2 className="text-3xl font-bold mb-4">
           Ready to Get Started?
         </h2>
-        <p className="text-gray-600 mb-8">
+        <p className="text-[#8A8A8A] mb-8">
           Get a free audit and find out how we can help your business grow.
         </p>
         <a

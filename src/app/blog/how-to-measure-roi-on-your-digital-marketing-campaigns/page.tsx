@@ -8,16 +8,16 @@ export const metadata = {
 
 export default function HowToMeasureRoiOnYourDigitalMarketingCampaigns() {
   return (
-    <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-[#0A0A0A] text-white">
       <article className="pt-20 sm:pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/blog/"
-            className="text-sm text-orange-600 hover:text-orange-700 transition-colors inline-flex items-center gap-1 mb-8"
+            className="text-sm text-orange-500 hover:text-orange-500 transition-colors inline-flex items-center gap-1 mb-8"
           >
             &larr; Back to Blog
           </Link>
-          <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
+          <div className="flex items-center gap-4 text-sm text-[#525252] mb-4">
             <time dateTime="2025-02-10">February 10, 2025</time>
             <span>|</span>
             <span>Creometric Team</span>
@@ -25,7 +25,7 @@ export default function HowToMeasureRoiOnYourDigitalMarketingCampaigns() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-8">
             How to Measure ROI on Your Digital Marketing Campaigns
           </h1>
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+          <div className="prose prose-lg max-w-none text-[#8A8A8A] space-y-6">
             <p>
               Every rupee you spend on digital marketing should be working toward a measurable
               outcome. Yet for many businesses, marketing budgets disappear into a fog of
@@ -39,7 +39,7 @@ export default function HowToMeasureRoiOnYourDigitalMarketingCampaigns() {
               real business results and make smarter decisions about where to invest your budget.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               Understanding Digital Marketing ROI
             </h2>
             <p>
@@ -62,7 +62,7 @@ export default function HowToMeasureRoiOnYourDigitalMarketingCampaigns() {
               signup. Getting this definition right is the foundation of accurate ROI measurement.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               Setting Up Google Analytics 4 for Conversion Tracking
             </h2>
             <p>
@@ -99,7 +99,7 @@ export default function HowToMeasureRoiOnYourDigitalMarketingCampaigns() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               Understanding Attribution Models
             </h2>
             <p>
@@ -136,7 +136,7 @@ export default function HowToMeasureRoiOnYourDigitalMarketingCampaigns() {
               limitations, and use it consistently so you can compare performance over time.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               Calculating Return on Ad Spend (ROAS)
             </h2>
             <p>
@@ -157,7 +157,7 @@ export default function HowToMeasureRoiOnYourDigitalMarketingCampaigns() {
               underperforming campaigns, and scale the ones that are delivering strong results.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               Key Metrics Beyond Revenue
             </h2>
             <p>
@@ -191,7 +191,7 @@ export default function HowToMeasureRoiOnYourDigitalMarketingCampaigns() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               Building a Reporting Dashboard
             </h2>
             <p>
@@ -207,7 +207,7 @@ export default function HowToMeasureRoiOnYourDigitalMarketingCampaigns() {
               for budget allocation decisions.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               Common Pitfalls to Avoid
             </h2>
             <p>
@@ -236,7 +236,7 @@ export default function HowToMeasureRoiOnYourDigitalMarketingCampaigns() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               Making Data-Driven Decisions
             </h2>
             <p>
@@ -254,11 +254,11 @@ export default function HowToMeasureRoiOnYourDigitalMarketingCampaigns() {
               day without proper tracking is a day of marketing spend that you cannot learn from.
             </p>
           </div>
-          <div className="mt-16 p-8 bg-gray-50 rounded-2xl text-center">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+          <div className="mt-16 p-8 bg-[#0F0F0F] rounded-2xl text-center">
+            <h2 className="text-2xl font-bold text-white mb-3">
               Want to Know What Your Marketing Is Really Delivering?
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="text-[#8A8A8A] mb-6">
               We help businesses set up proper tracking, build reporting dashboards, and optimize
               campaigns for maximum ROI. Let us show you exactly where your marketing budget is
               going and what it is bringing back.

@@ -8,16 +8,16 @@ export const metadata = {
 
 export default function SocialMediaTrendsToWatchIn2025() {
   return (
-    <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-[#0A0A0A] text-white">
       <article className="pt-20 sm:pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/blog/"
-            className="text-sm text-orange-600 hover:text-orange-700 transition-colors inline-flex items-center gap-1 mb-8"
+            className="text-sm text-orange-500 hover:text-orange-500 transition-colors inline-flex items-center gap-1 mb-8"
           >
             &larr; Back to Blog
           </Link>
-          <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
+          <div className="flex items-center gap-4 text-sm text-[#525252] mb-4">
             <time dateTime="2025-03-01">March 1, 2025</time>
             <span>|</span>
             <span>Creometric Team</span>
@@ -25,7 +25,7 @@ export default function SocialMediaTrendsToWatchIn2025() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-8">
             Social Media Trends to Watch in 2025
           </h1>
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+          <div className="prose prose-lg max-w-none text-[#8A8A8A] space-y-6">
             <p>
               Social media never stands still. Platforms evolve, user behaviors shift, algorithms
               change, and what worked last year may be irrelevant today. For businesses that rely
@@ -38,7 +38,7 @@ export default function SocialMediaTrendsToWatchIn2025() {
               to know and how to adapt your strategy accordingly.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               1. Short-Form Video Continues to Dominate
             </h2>
             <p>
@@ -63,7 +63,7 @@ export default function SocialMediaTrendsToWatchIn2025() {
               and produce it consistently.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               2. AI-Assisted Content Creation Is Now Mainstream
             </h2>
             <p>
@@ -98,7 +98,7 @@ export default function SocialMediaTrendsToWatchIn2025() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               3. Social Commerce Is Removing the Friction
             </h2>
             <p>
@@ -136,7 +136,7 @@ export default function SocialMediaTrendsToWatchIn2025() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               4. Community Building Over Broadcast Marketing
             </h2>
             <p>
@@ -160,7 +160,7 @@ export default function SocialMediaTrendsToWatchIn2025() {
               between transactions.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               5. Platform-Specific Strategies Are Non-Negotiable
             </h2>
             <p>
@@ -199,7 +199,7 @@ export default function SocialMediaTrendsToWatchIn2025() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               6. Authenticity and Transparency Win
             </h2>
             <p>
@@ -214,7 +214,7 @@ export default function SocialMediaTrendsToWatchIn2025() {
               social media this year will be the ones that feel human, approachable, and genuine.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               Adapting Your Strategy
             </h2>
             <p>
@@ -232,11 +232,11 @@ export default function SocialMediaTrendsToWatchIn2025() {
               approach will always outperform trying to do everything at once.
             </p>
           </div>
-          <div className="mt-16 p-8 bg-gray-50 rounded-2xl text-center">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+          <div className="mt-16 p-8 bg-[#0F0F0F] rounded-2xl text-center">
+            <h2 className="text-2xl font-bold text-white mb-3">
               Ready to Elevate Your Social Media Strategy?
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="text-[#8A8A8A] mb-6">
               Our team stays on top of every platform update and emerging trend so you do not have
               to. Let us build a social media strategy that connects with your audience and drives
               real business results.

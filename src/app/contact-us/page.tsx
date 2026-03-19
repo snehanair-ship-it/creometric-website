@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-[#0A0A0A] text-white">
       {/* Hero */}
       <section className="pt-24 sm:pt-32 pb-12 px-6 text-center">
         <p className="text-sm font-medium text-orange-500 uppercase tracking-wide mb-3">
@@ -18,7 +18,7 @@ export default function Contact() {
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
           Let&apos;s Talk Growth
         </h1>
-        <p className="text-lg text-gray-600 max-w-xl mx-auto">
+        <p className="text-lg text-[#8A8A8A] max-w-xl mx-auto">
           Have a project in mind? We reply within <strong>24 hours</strong>.
         </p>
       </section>
@@ -33,7 +33,7 @@ export default function Contact() {
             {/* Contact Details */}
             <div className="space-y-5">
               <div>
-                <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-1">
+                <h3 className="text-sm font-medium text-[#525252] uppercase tracking-wide mb-1">
                   Phone
                 </h3>
                 <a
@@ -44,7 +44,7 @@ export default function Contact() {
                 </a>
               </div>
               <div>
-                <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-1">
+                <h3 className="text-sm font-medium text-[#525252] uppercase tracking-wide mb-1">
                   Email
                 </h3>
                 <a
@@ -55,15 +55,15 @@ export default function Contact() {
                 </a>
               </div>
               <div>
-                <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-1">
+                <h3 className="text-sm font-medium text-[#525252] uppercase tracking-wide mb-1">
                   Office
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-[#8A8A8A]">
                   Nordic Intent, Lane 4,<br />
                   PDA Colony, Porvorim, Goa
                 </p>
               </div>
-              <div className="inline-flex items-center gap-2 bg-orange-50 text-orange-700 rounded-full px-4 py-2 text-sm font-medium">
+              <div className="inline-flex items-center gap-2 bg-orange-500/10 text-orange-500 rounded-full px-4 py-2 text-sm font-medium">
                 <svg
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ export default function Contact() {
             </div>
 
             {/* Google Maps */}
-            <div className="w-full aspect-video rounded-2xl overflow-hidden border border-gray-200">
+            <div className="w-full aspect-video rounded-2xl overflow-hidden border border-[#2A2A2A]">
               <iframe
                 title="Creometric Office Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.0!2d73.8278!3d15.4909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDI5JzI3LjIiTiA3M8KwNDknNDAuMSJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin&q=Nordic+Intent,+Lane+4,+PDA+Colony,+Porvorim,+Goa"

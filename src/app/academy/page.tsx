@@ -53,14 +53,14 @@ const resources = [
 ];
 
 const levelColors: Record<string, string> = {
-  Beginner: "bg-green-50 text-green-700",
-  Intermediate: "bg-blue-50 text-blue-700",
-  Advanced: "bg-purple-50 text-purple-700",
+  Beginner: "bg-green-500/10 text-green-400",
+  Intermediate: "bg-blue-500/10 text-blue-400",
+  Advanced: "bg-purple-500/10 text-purple-400",
 };
 
 export default function Academy() {
   return (
-    <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-[#0A0A0A] text-white">
       {/* Hero */}
       <section className="pt-24 sm:pt-32 pb-12 px-6 text-center">
         <p className="text-sm font-medium text-orange-500 uppercase tracking-wide mb-3">
@@ -69,7 +69,7 @@ export default function Academy() {
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
           Learn Digital Marketing
         </h1>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="text-lg text-[#8A8A8A] max-w-2xl mx-auto">
           Free guides, templates, and resources to help you grow your business
           online. Created by the Creometric team.
         </p>
@@ -81,10 +81,10 @@ export default function Academy() {
           {resources.map((resource) => (
             <div
               key={resource.title}
-              className="rounded-2xl border border-gray-200 p-8 hover:shadow-md transition-shadow flex flex-col"
+              className="rounded-2xl border border-[#2A2A2A] p-8 hover:shadow-lg hover:shadow-orange-500/5 transition-shadow flex flex-col"
             >
               <div className="flex items-center gap-2 mb-4">
-                <span className="text-xs font-medium text-orange-600 bg-orange-50 px-3 py-1 rounded-full">
+                <span className="text-xs font-medium text-orange-500 bg-orange-500/10 px-3 py-1 rounded-full">
                   {resource.category}
                 </span>
                 <span
@@ -96,10 +96,10 @@ export default function Academy() {
                 </span>
               </div>
               <h2 className="text-lg font-semibold mb-2">{resource.title}</h2>
-              <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-1">
+              <p className="text-[#8A8A8A] text-sm leading-relaxed mb-4 flex-1">
                 {resource.description}
               </p>
-              <span className="text-sm font-medium text-gray-900">
+              <span className="text-sm font-medium text-white">
                 Coming Soon &rarr;
               </span>
             </div>
@@ -108,11 +108,11 @@ export default function Academy() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-6 bg-gray-50 text-center">
+      <section className="py-16 px-6 bg-[#0F0F0F] text-center">
         <h2 className="text-2xl font-bold mb-3">
           Want Personalized Guidance?
         </h2>
-        <p className="text-gray-600 mb-6 max-w-lg mx-auto">
+        <p className="text-[#8A8A8A] mb-6 max-w-lg mx-auto">
           Our team can create a custom growth plan tailored to your business.
           Get started with a free audit.
         </p>

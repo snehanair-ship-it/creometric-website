@@ -29,96 +29,108 @@ export default function LeadForm() {
   }
 
   return (
-    <section id="contact" className="py-20 px-6 bg-gray-50">
-      <div className="max-w-2xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
-          Get a Free Website Audit
-        </h2>
-        <p className="text-gray-600 text-center mb-10">
-          Tell us about your business and we&apos;ll call you within 24 hours
-          with a custom growth plan.
-        </p>
-
-        <form onSubmit={handleSubmit} className="space-y-5">
-          <input type="hidden" name="form-name" value="lead-form" />
-          <input type="text" name="bot-field" className="hidden" tabIndex={-1} autoComplete="off" aria-hidden="true" />
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-1">
-                Your Name *
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
-                placeholder="John Doe"
-              />
+    <section id="contact" className="py-20 sm:py-28 px-6 bg-[#0F0F0F] relative overflow-hidden">
+      <div className="max-w-6xl mx-auto relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left: Copy */}
+          <div>
+            <div className="flex flex-col items-start gap-4 mb-6">
+              <div className="w-10 h-[3px] bg-orange-500 rounded-full" />
+              <span className="text-xs font-bold text-orange-500 uppercase tracking-[0.2em] font-inter">
+                Get in Touch
+              </span>
             </div>
-            <div>
-              <label htmlFor="phone" className="block text-sm font-medium mb-1">
-                Phone Number *
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                required
-                className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
-                placeholder="+91 98765 43210"
-              />
+            <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight font-sora mb-4" style={{ letterSpacing: "-0.025em", lineHeight: "1.2" }}>
+              Let&apos;s Build Something Great Together
+            </h2>
+
+            <div className="mt-8 space-y-4">
+              {[
+                "Free SEO & website audit report",
+                "Competitor analysis with actionable insights",
+                "Custom 90-day growth roadmap",
+              ].map((benefit) => (
+                <div key={benefit} className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-orange-500/10 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-orange-500" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                  </div>
+                  <span className="text-sm text-[#8A8A8A] font-inter">{benefit}</span>
+                </div>
+              ))}
             </div>
           </div>
 
-          <div>
-            <label htmlFor="email" className="block text-sm font-medium mb-1">
-              Email Address *
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
-              placeholder="john@example.com"
-            />
-          </div>
+          {/* Right: Form */}
+          <div className="rounded-2xl bg-[#1A1A1A] border border-[#2A2A2A] p-8 lg:p-10">
+            <h3 className="text-xl font-bold text-white font-sora mb-6">Request Your Free Audit</h3>
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <input type="hidden" name="form-name" value="lead-form" />
+              <input type="text" name="bot-field" className="hidden" tabIndex={-1} autoComplete="off" aria-hidden="true" />
 
-          <div>
-            <label htmlFor="website" className="block text-sm font-medium mb-1">
-              Website URL
-            </label>
-            <input
-              type="url"
-              id="website"
-              name="website"
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
-              placeholder="https://yourbusiness.com"
-            />
-          </div>
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-[#8A8A8A] mb-2 font-inter">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  className="w-full rounded-lg border border-[#2A2A2A] bg-[#242424] px-4 py-3 text-sm text-white placeholder-[#525252] focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-shadow font-inter"
+                  placeholder="Your name"
+                />
+              </div>
 
-          <div>
-            <label htmlFor="message" className="block text-sm font-medium mb-1">
-              Tell us about your business
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows={4}
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent resize-none"
-              placeholder="What services are you interested in?"
-            />
-          </div>
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-[#8A8A8A] mb-2 font-inter">
+                  Phone
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  className="w-full rounded-lg border border-[#2A2A2A] bg-[#242424] px-4 py-3 text-sm text-white placeholder-[#525252] focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-shadow font-inter"
+                  placeholder="+91 XXXXX XXXXX"
+                />
+              </div>
 
-          <button
-            type="submit"
-            className="w-full rounded-full bg-gray-900 text-white py-3 text-sm font-medium hover:bg-gray-700 transition-colors"
-          >
-            Get My Free Audit
-          </button>
-        </form>
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-[#8A8A8A] mb-2 font-inter">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  className="w-full rounded-lg border border-[#2A2A2A] bg-[#242424] px-4 py-3 text-sm text-white placeholder-[#525252] focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-shadow font-inter"
+                  placeholder="you@company.com"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="website" className="block text-sm font-medium text-[#8A8A8A] mb-2 font-inter">
+                  Website URL
+                </label>
+                <input
+                  type="url"
+                  id="website"
+                  name="website"
+                  className="w-full rounded-lg border border-[#2A2A2A] bg-[#242424] px-4 py-3 text-sm text-white placeholder-[#525252] focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-shadow font-inter"
+                  placeholder="www.yoursite.com"
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full rounded-lg bg-gradient-to-b from-orange-500 to-orange-600 text-white py-3.5 text-base font-semibold hover:from-orange-400 hover:to-orange-500 transition-all shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40 font-inter"
+              >
+                Get My Free Audit
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   );

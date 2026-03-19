@@ -8,19 +8,19 @@ export const metadata = {
 
 export default function VoiceSearchImpactBlogPost() {
   return (
-    <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-[#0A0A0A] text-white">
       <article className="pt-24 sm:pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto">
           {/* Back link */}
           <Link
             href="/blog/"
-            className="text-sm text-orange-600 hover:text-orange-700 transition-colors inline-flex items-center gap-1 mb-8"
+            className="text-sm text-orange-500 hover:text-orange-500 transition-colors inline-flex items-center gap-1 mb-8"
           >
             &larr; Back to Blog
           </Link>
 
           {/* Meta info */}
-          <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
+          <div className="flex items-center gap-4 text-sm text-[#525252] mb-4">
             <time dateTime="2024-09-10">September 10, 2024</time>
             <span>|</span>
             <span>Creometric Team</span>
@@ -32,7 +32,7 @@ export default function VoiceSearchImpactBlogPost() {
           </h1>
 
           {/* Article body */}
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+          <div className="prose prose-lg max-w-none text-[#8A8A8A] space-y-6">
             <p>
               The way people search for information online is changing fundamentally. Voice search — using spoken commands to query search engines through devices like smartphones, smart speakers, and virtual assistants — has grown from a novelty into a mainstream behaviour. For digital marketers, this shift demands a rethinking of strategy across content, SEO, local marketing, and paid advertising.
             </p>
@@ -40,7 +40,7 @@ export default function VoiceSearchImpactBlogPost() {
               At Creometric, we have been tracking the rise of voice search and helping our clients in Goa and beyond prepare for a voice-first future. In this article, we examine how voice search is reshaping digital marketing and share practical strategies for staying ahead of the curve.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               The Rise of Voice Search: Where We Stand
             </h2>
             <p>
@@ -53,7 +53,7 @@ export default function VoiceSearchImpactBlogPost() {
               For marketers, this shift has profound implications. Voice queries are fundamentally different from typed searches, and the strategies that work for traditional SEO do not always translate to voice.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               How Voice Search Differs From Text Search
             </h2>
             <p>
@@ -74,14 +74,14 @@ export default function VoiceSearchImpactBlogPost() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               Optimising Your Content for Voice Search
             </h2>
             <p>
               Adapting your content strategy for voice search does not mean abandoning traditional SEO. Instead, it means layering voice-specific optimisations on top of your existing practices. Here is how to do it:
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               1. Target Long-Tail, Conversational Keywords
             </h2>
             <p>
@@ -91,7 +91,7 @@ export default function VoiceSearchImpactBlogPost() {
               For example, instead of optimising solely for &quot;digital marketing agency Goa,&quot; consider also targeting &quot;What is the best digital marketing agency in Goa for small businesses?&quot; This aligns with how people phrase voice queries and positions your content to capture those searches.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               2. Create FAQ-Style Content
             </h2>
             <p>
@@ -101,7 +101,7 @@ export default function VoiceSearchImpactBlogPost() {
               Structure each question as a heading (H2 or H3) and provide a concise, direct answer in the first one or two sentences below it. This format aligns perfectly with how search engines extract featured snippets for voice results.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               3. Aim for Featured Snippets
             </h2>
             <p>
@@ -111,7 +111,7 @@ export default function VoiceSearchImpactBlogPost() {
               To increase your chances of earning a featured snippet, provide clear and concise answers to common questions, use structured data markup, format content with lists and tables where appropriate, and ensure your page ranks on the first page for the target query. Featured snippet optimisation is one of the highest-impact voice search strategies available.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               4. Prioritise Local SEO
             </h2>
             <p>
@@ -121,7 +121,7 @@ export default function VoiceSearchImpactBlogPost() {
               Consistency matters across all platforms. Your business information should be identical on your website, Google Business Profile, social media accounts, and third-party directories. Inconsistencies confuse search engines and can hurt your visibility in voice search results.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               5. Improve Page Speed and Mobile Experience
             </h2>
             <p>
@@ -131,7 +131,7 @@ export default function VoiceSearchImpactBlogPost() {
               Focus on Core Web Vitals, implement responsive design, compress media assets, and eliminate render-blocking resources. Every millisecond counts when search engines are choosing which result to read aloud to a user.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               The Impact on Paid Advertising
             </h2>
             <p>
@@ -147,7 +147,7 @@ export default function VoiceSearchImpactBlogPost() {
               <li>Use location extensions and call extensions to capture local voice searches.</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               Preparing Your Brand for a Voice-First Future
             </h2>
             <p>
@@ -162,11 +162,11 @@ export default function VoiceSearchImpactBlogPost() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 bg-gray-50 rounded-2xl text-center">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+          <div className="mt-16 p-8 bg-[#0F0F0F] rounded-2xl text-center">
+            <h2 className="text-2xl font-bold text-white mb-3">
               Ready to Optimise for Voice Search?
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="text-[#8A8A8A] mb-6">
               Creometric can help your brand get found in voice search results. Reach out to discuss your voice search strategy today.
             </p>
             <Link

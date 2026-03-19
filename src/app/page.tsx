@@ -83,7 +83,7 @@ const faqSchema = {
 
 export default function Home() {
   return (
-    <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-[#0A0A0A] text-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
@@ -93,59 +93,132 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* Hero */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center relative overflow-hidden">
-        {/* Animated gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-amber-50/30 animate-gradient" />
+      {/* ─── Hero: Dark, bold, agency-grade ─── */}
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-[#0A0A0A]">
+        {/* Radial glow */}
+        <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-orange-500/10 rounded-full blur-[120px] animate-pulse-glow" />
 
-        {/* Decorative floating orbs */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-orange-200/20 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1.5s' }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-100/10 rounded-full blur-3xl" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6 py-32 w-full">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left: Copy */}
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full border border-orange-500/20 bg-orange-500/10 px-4 py-2 mb-8 animate-fade-up opacity-0">
+                <span className="w-2 h-2 rounded-full bg-orange-400 animate-pulse" />
+                <span className="text-[11px] font-bold text-orange-500 uppercase tracking-[0.15em] font-inter">Digital Marketing Agency in Goa</span>
+              </div>
 
-        {/* Grid pattern overlay */}
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage: 'radial-gradient(circle, #000 1px, transparent 1px)',
-            backgroundSize: '24px 24px',
-          }}
-        />
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.05] animate-fade-up opacity-0 delay-100 font-sora" style={{ letterSpacing: "-0.04em" }}>
+                We Build Brands
+                <br />
+                That <span className="bg-gradient-to-r from-orange-500 to-amber-400 bg-clip-text text-transparent">Dominate</span>
+                <br />
+                Online.
+              </h1>
 
-        <div className="relative z-10 max-w-4xl mx-auto">
-          <p className="text-sm font-medium text-orange-500 uppercase tracking-widest mb-4 animate-fade-up opacity-0">
-            Digital Marketing Agency in Goa
-          </p>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-balance animate-fade-up opacity-0 delay-100">
-            We Help Brands
-            <span className="animate-shimmer"> Grow</span>
-          </h1>
-          <p className="mt-6 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto animate-fade-up opacity-0 delay-200">
-            Strategy. Design. Technology. We deliver real results in SEO, social
-            media, PPC, and web design for businesses across Goa and India.
-          </p>
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center animate-fade-up opacity-0 delay-300">
-            <a
-              href="#contact"
-              className="rounded-full bg-orange-500 text-white px-8 py-4 text-sm font-medium hover:bg-orange-600 transition-all shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/30 hover:-translate-y-0.5"
-            >
-              Get a Free Audit
-            </a>
-            <a
-              href="#services"
-              className="rounded-full border border-gray-300 bg-white/80 backdrop-blur-sm px-8 py-4 text-sm font-medium hover:bg-white hover:border-gray-400 transition-all hover:-translate-y-0.5"
-            >
-              Our Services
-            </a>
+              <p className="mt-6 text-lg text-[#8A8A8A] max-w-lg leading-relaxed animate-fade-up opacity-0 delay-200 font-inter" style={{ lineHeight: "1.6" }}>
+                SEO. Social Media. PPC. Web Design. We combine strategy, design, and technology to deliver measurable growth for businesses across Goa and India.
+              </p>
+
+              <div className="mt-10 flex flex-col sm:flex-row gap-4 animate-fade-up opacity-0 delay-300">
+                <a
+                  href="#contact"
+                  className="rounded-lg bg-gradient-to-b from-orange-500 to-orange-600 text-white px-8 py-4 text-base font-semibold hover:from-orange-400 hover:to-orange-500 transition-all shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40 hover:-translate-y-0.5 text-center font-inter"
+                >
+                  Get a Free Audit
+                </a>
+                <a
+                  href="#services"
+                  className="rounded-lg border border-[#2A2A2A] text-[#8A8A8A] px-8 py-4 text-base font-medium hover:border-[#3A3A3A] hover:text-white transition-all hover:-translate-y-0.5 text-center font-inter"
+                >
+                  Explore Services
+                </a>
+              </div>
+
+              {/* Trust indicators */}
+              <div className="mt-12 flex flex-wrap items-center gap-8 animate-fade-up opacity-0 delay-400">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center">
+                    <svg className="w-4 h-4 text-green-400" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                  </div>
+                  <span className="text-sm text-[#525252] font-inter font-medium">250+ Projects</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center">
+                    <svg className="w-4 h-4 text-blue-400" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" /></svg>
+                  </div>
+                  <span className="text-sm text-[#525252] font-inter font-medium">5 Cr+ ROI</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 rounded-full bg-orange-500/10 flex items-center justify-center">
+                    <svg className="w-4 h-4 text-orange-400" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" /></svg>
+                  </div>
+                  <span className="text-sm text-[#525252] font-inter font-medium">20+ Active Clients</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Results dashboard mockup */}
+            <div className="hidden lg:block animate-fade-up opacity-0 delay-300">
+              <div className="relative">
+                {/* Glow behind card */}
+                <div className="absolute -inset-4 bg-gradient-to-r from-orange-500/15 via-amber-500/5 to-orange-500/15 rounded-3xl blur-2xl" />
+
+                {/* Dashboard card */}
+                <div className="relative rounded-2xl bg-[#1A1A1A] border border-[#2A2A2A] p-6 shadow-2xl shadow-orange-500/5">
+                  {/* Header */}
+                  <div className="flex items-center justify-between mb-6">
+                    <div>
+                      <p className="text-[9px] text-[#525252] uppercase tracking-[0.2em] font-bold font-inter">Client Dashboard</p>
+                      <p className="text-sm font-bold text-white mt-0.5 font-sora">Organic Traffic Growth</p>
+                    </div>
+                    <span className="inline-flex items-center gap-1 rounded-full bg-green-500/10 px-3 py-1.5 text-xs font-semibold text-green-400 font-inter">
+                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" /></svg>
+                      +340%
+                    </span>
+                  </div>
+
+                  {/* Chart mockup */}
+                  <div className="relative h-32 mb-6 rounded-lg bg-[#242424]/50">
+                    <svg className="w-full h-full" viewBox="0 0 400 128" fill="none" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stopColor="#f97316" stopOpacity="0.3" />
+                          <stop offset="100%" stopColor="#f97316" stopOpacity="0" />
+                        </linearGradient>
+                      </defs>
+                      <path d="M0 112 Q50 108 80 96 Q120 80 160 76 Q200 72 240 48 Q280 28 320 20 Q360 14 400 6 L400 128 L0 128Z" fill="url(#chartGrad)" />
+                      <path d="M0 112 Q50 108 80 96 Q120 80 160 76 Q200 72 240 48 Q280 28 320 20 Q360 14 400 6" stroke="#f97316" strokeWidth="2.5" fill="none" />
+                      <circle cx="400" cy="6" r="4" fill="#f97316" />
+                      <circle cx="400" cy="6" r="8" fill="#f97316" opacity="0.3" />
+                    </svg>
+                  </div>
+
+                  {/* Metric cards */}
+                  <div className="grid grid-cols-3 gap-3">
+                    <div className="rounded-xl bg-[#242424] border border-[#2A2A2A] p-4">
+                      <p className="text-[11px] text-[#525252] font-inter font-medium">Keywords</p>
+                      <p className="text-xl font-bold text-white font-sora">1,247</p>
+                      <p className="text-[11px] text-green-400 font-inter font-medium">+89 this month</p>
+                    </div>
+                    <div className="rounded-xl bg-[#242424] border border-[#2A2A2A] p-4">
+                      <p className="text-[11px] text-[#525252] font-inter font-medium">Clicks</p>
+                      <p className="text-xl font-bold text-white font-sora">28.4K</p>
+                      <p className="text-[11px] text-green-400 font-inter font-medium">+12.3% MoM</p>
+                    </div>
+                    <div className="rounded-xl bg-[#242424] border border-[#2A2A2A] p-4">
+                      <p className="text-[11px] text-[#525252] font-inter font-medium">Conversions</p>
+                      <p className="text-xl font-bold text-white font-sora">342</p>
+                      <p className="text-[11px] text-green-400 font-inter font-medium">+28% MoM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <p className="mt-8 text-xs text-gray-400 animate-fade-up opacity-0 delay-400">
-            Trusted by 20+ businesses &bull; 250+ projects completed &bull; 5
-            Cr+ ROI generated
-          </p>
         </div>
       </section>
 
-      {/* Client Logos */}
+      {/* Client Logos — full width for marquee effect */}
       <ClientLogos />
 
       {/* Stats */}

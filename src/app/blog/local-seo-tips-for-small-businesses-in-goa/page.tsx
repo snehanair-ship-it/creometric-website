@@ -8,16 +8,16 @@ export const metadata = {
 
 export default function LocalSeoTipsForSmallBusinessesInGoa() {
   return (
-    <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-[#0A0A0A] text-white">
       <article className="pt-20 sm:pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/blog/"
-            className="text-sm text-orange-600 hover:text-orange-700 transition-colors inline-flex items-center gap-1 mb-8"
+            className="text-sm text-orange-500 hover:text-orange-500 transition-colors inline-flex items-center gap-1 mb-8"
           >
             &larr; Back to Blog
           </Link>
-          <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
+          <div className="flex items-center gap-4 text-sm text-[#525252] mb-4">
             <time dateTime="2025-01-15">January 15, 2025</time>
             <span>|</span>
             <span>Creometric Team</span>
@@ -25,7 +25,7 @@ export default function LocalSeoTipsForSmallBusinessesInGoa() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-8">
             Local SEO Tips for Small Businesses in Goa
           </h1>
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+          <div className="prose prose-lg max-w-none text-[#8A8A8A] space-y-6">
             <p>
               Goa is a state built on local commerce. From beachside shacks in Calangute to boutique
               shops in Panjim&apos;s Fontainhas quarter, small businesses form the backbone of the
@@ -45,7 +45,7 @@ export default function LocalSeoTipsForSmallBusinessesInGoa() {
               in Goa can implement right away, many of them at no cost at all.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               1. Claim and Optimize Your Google Business Profile
             </h2>
             <p>
@@ -81,7 +81,7 @@ export default function LocalSeoTipsForSmallBusinessesInGoa() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               2. Maintain NAP Consistency Across the Web
             </h2>
             <p>
@@ -98,7 +98,7 @@ export default function LocalSeoTipsForSmallBusinessesInGoa() {
               &ldquo;Rd&rdquo; versus &ldquo;Road&rdquo; can hurt your local rankings.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               3. Build Local Citations on Relevant Directories
             </h2>
             <p>
@@ -132,7 +132,7 @@ export default function LocalSeoTipsForSmallBusinessesInGoa() {
               presence becomes.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               4. Earn and Manage Customer Reviews
             </h2>
             <p>
@@ -165,7 +165,7 @@ export default function LocalSeoTipsForSmallBusinessesInGoa() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               5. Target Local Keywords in Your Website Content
             </h2>
             <p>
@@ -192,7 +192,7 @@ export default function LocalSeoTipsForSmallBusinessesInGoa() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               6. Optimize for Mobile and Page Speed
             </h2>
             <p>
@@ -207,7 +207,7 @@ export default function LocalSeoTipsForSmallBusinessesInGoa() {
               ensure buttons and links are easily tappable on small screens.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               7. Leverage Social Media for Local Visibility
             </h2>
             <p>
@@ -223,7 +223,7 @@ export default function LocalSeoTipsForSmallBusinessesInGoa() {
               local SEO performance.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+            <h2 className="text-2xl font-bold text-white mt-10 mb-4">
               Taking the First Step
             </h2>
             <p>
@@ -241,11 +241,11 @@ export default function LocalSeoTipsForSmallBusinessesInGoa() {
               consistent, long-term results.
             </p>
           </div>
-          <div className="mt-16 p-8 bg-gray-50 rounded-2xl text-center">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+          <div className="mt-16 p-8 bg-[#0F0F0F] rounded-2xl text-center">
+            <h2 className="text-2xl font-bold text-white mb-3">
               Need Help With Local SEO in Goa?
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="text-[#8A8A8A] mb-6">
               Our team specializes in helping Goa-based businesses rank higher in local search
               results. Let us build a local SEO strategy tailored to your business and your market.
             </p>

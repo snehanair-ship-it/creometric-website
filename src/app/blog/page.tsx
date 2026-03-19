@@ -70,7 +70,7 @@ const posts = [
 
 export default function Blog() {
   return (
-    <div className="bg-white text-gray-900 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-[#0A0A0A] text-white">
       {/* Hero */}
       <section className="pt-24 sm:pt-32 pb-12 px-6 text-center">
         <p className="text-sm font-medium text-orange-500 uppercase tracking-wide mb-3">
@@ -79,7 +79,7 @@ export default function Blog() {
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
           Insights & Tips
         </h1>
-        <p className="text-lg text-gray-600 max-w-xl mx-auto">
+        <p className="text-lg text-[#8A8A8A] max-w-xl mx-auto">
           Digital marketing strategies, SEO tips, and growth ideas for
           businesses in Goa and beyond.
         </p>
@@ -92,9 +92,9 @@ export default function Blog() {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="block rounded-2xl border border-gray-200 p-8 hover:shadow-md transition-shadow"
+              className="block rounded-2xl border border-[#2A2A2A] p-8 hover:shadow-lg hover:shadow-orange-500/5 transition-shadow"
             >
-              <div className="flex items-center gap-3 text-sm text-gray-500 mb-3">
+              <div className="flex items-center gap-3 text-sm text-[#525252] mb-3">
                 <time>{post.date}</time>
                 <span className="w-1 h-1 rounded-full bg-gray-300" />
                 <span>{post.author}</span>
@@ -102,10 +102,10 @@ export default function Blog() {
               <h2 className="text-xl sm:text-2xl font-semibold mb-3">
                 {post.title}
               </h2>
-              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+              <p className="text-[#8A8A8A] text-sm leading-relaxed mb-4">
                 {post.excerpt}
               </p>
-              <span className="text-sm font-medium text-gray-900 hover:underline">
+              <span className="text-sm font-medium text-white hover:underline">
                 Read More &rarr;
               </span>
             </Link>
