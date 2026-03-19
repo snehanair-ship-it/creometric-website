@@ -1,9 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 
 interface ServicePageProps {
   title: string;
   subtitle: string;
   description: string;
+  heroImage?: string;
   benefits: string[];
   process: { step: string; description: string }[];
   faq: { q: string; a: string }[];
@@ -13,6 +15,7 @@ export default function ServicePageLayout({
   title,
   subtitle,
   description,
+  heroImage,
   benefits,
   process,
   faq,
@@ -20,29 +23,37 @@ export default function ServicePageLayout({
   return (
     <div className="bg-[#0A0A0A] text-white">
       {/* Hero */}
-      <section className="pt-24 sm:pt-32 pb-16 px-6 text-center bg-[#0A0A0A]">
-        <p className="text-sm font-medium text-orange-500 uppercase tracking-wide mb-3">
-          {subtitle}
-        </p>
-        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6 max-w-3xl mx-auto">
-          {title}
-        </h1>
-        <p className="text-lg text-[#8A8A8A] max-w-2xl mx-auto leading-relaxed">
-          {description}
-        </p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="/contact-us/"
-            className="rounded-full bg-orange-500 text-white px-8 py-3.5 text-sm font-medium hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/25"
-          >
-            Get a Free Audit
-          </Link>
-          <a
-            href="tel:+919850950259"
-            className="rounded-full border border-[#2A2A2A] px-8 py-3.5 text-sm font-medium hover:bg-[#0F0F0F] transition-colors"
-          >
-            Call Us Now
-          </a>
+      <section className="pt-24 sm:pt-32 pb-16 px-6 text-center bg-[#0A0A0A] relative overflow-hidden">
+        {heroImage && (
+          <div className="absolute inset-0">
+            <Image src={heroImage} alt="" fill className="object-cover opacity-15" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/60 via-[#0A0A0A]/80 to-[#0A0A0A]" />
+          </div>
+        )}
+        <div className="relative z-10">
+          <p className="text-sm font-medium text-orange-500 uppercase tracking-wide mb-3 font-inter">
+            {subtitle}
+          </p>
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6 max-w-3xl mx-auto font-sora" style={{ letterSpacing: "-0.03em" }}>
+            {title}
+          </h1>
+          <p className="text-lg text-[#8A8A8A] max-w-2xl mx-auto leading-relaxed font-inter">
+            {description}
+          </p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/contact-us/"
+              className="rounded-lg bg-gradient-to-b from-orange-500 to-orange-600 text-white px-8 py-3.5 text-sm font-medium hover:from-orange-400 hover:to-orange-500 transition-all shadow-lg shadow-orange-500/25 font-inter"
+            >
+              Get a Free Audit
+            </Link>
+            <a
+              href="tel:+919850950259"
+              className="rounded-lg border border-[#2A2A2A] px-8 py-3.5 text-sm font-medium hover:border-[#3A3A3A] hover:text-white transition-colors text-[#8A8A8A] font-inter"
+            >
+              Call Us Now
+            </a>
+          </div>
         </div>
       </section>
 

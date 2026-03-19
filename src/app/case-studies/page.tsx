@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Case Studies | Creometric — Real Results for Real Businesses",
@@ -12,6 +13,7 @@ const caseStudies = [
     industry: "Healthcare",
     service: "SEO + Google Ads",
     result: "3x increase in online enquiries within 4 months",
+    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
     description:
       "Dr. Neil David Andrade needed more patients finding his clinic online. We implemented a local SEO strategy targeting dental keywords in Goa, combined with Google Ads campaigns for high-intent searches. The result was an immediate increase in online enquiries and appointment bookings.",
     metrics: [
@@ -25,6 +27,7 @@ const caseStudies = [
     industry: "Education",
     service: "Social Media Management",
     result: "200% growth in student enrollments via Instagram",
+    image: "https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?w=800&q=80",
     description:
       "Neha Malhotra's dance academy was well-known locally but had minimal digital presence. We built a content strategy around short-form dance videos, student showcases, and behind-the-scenes content. Within 6 months, the academy saw a 200% growth in new student enrollments driven by social media.",
     metrics: [
@@ -38,6 +41,7 @@ const caseStudies = [
     industry: "Food & Beverage",
     service: "Social Media + Content Marketing",
     result: "Built brand from zero to 10K followers in 5 months",
+    image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
     description:
       "Henry Fernandes wanted to establish his cocktail brand in Goa's competitive F&B scene. We created a visually-driven content strategy with recipe videos, mixology tips, and event coverage. The brand went from zero to a loyal following, driving both online orders and event bookings.",
     metrics: [
@@ -51,6 +55,7 @@ const caseStudies = [
     industry: "Tourism & Hospitality",
     service: "SEO + Website Design",
     result: "85% increase in organic traffic within 6 months",
+    image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&q=80",
     description:
       "A leading Goa tourism operator needed to compete with larger aggregators in search results. We redesigned their website for speed and user experience, implemented technical SEO, and created location-specific content. Organic traffic increased by 85% and direct bookings doubled.",
     metrics: [
@@ -86,6 +91,15 @@ export default function CaseStudies() {
               key={study.client}
               className="rounded-2xl border border-[#2A2A2A] overflow-hidden"
             >
+              <div className="relative h-48 sm:h-56">
+                <Image
+                  src={study.image}
+                  alt={study.client}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/40 to-transparent" />
+              </div>
               <div className="p-5 sm:p-8 md:p-10">
                 <div className="flex flex-wrap items-center gap-3 mb-4">
                   <span className="text-xs font-medium text-orange-500 bg-orange-500/10 px-3 py-1 rounded-full">

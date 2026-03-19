@@ -12,6 +12,7 @@ export default function SearchEngineOptimisationPage() {
     <ServicePageLayout
       title="SEO Services That Put Your Business on Page One of Google"
       subtitle="Search Engine Optimisation in Goa"
+      heroImage="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=1200&q=80"
       description="When potential customers in Goa search for your products or services, your website should be the first thing they find. Creometric delivers data-driven SEO strategies that increase organic traffic, improve search rankings, and generate qualified leads for your business."
       benefits={[
         "Comprehensive technical SEO audits to fix crawl errors, speed issues, and indexing problems holding your site back",

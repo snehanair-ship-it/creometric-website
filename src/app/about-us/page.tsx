@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About Us | Creometric — Digital Marketing Agency in Goa",
@@ -85,30 +86,41 @@ export default function About() {
   return (
     <div className="bg-[#0A0A0A] text-white">
       {/* Hero */}
-      <section className="pt-24 sm:pt-32 pb-20 px-6 text-center relative overflow-hidden">
-        {/* Subtle gradient backdrop */}
+      <section className="pt-24 sm:pt-32 pb-20 px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-[#0A0A0A]" />
-        <div className="relative z-10 max-w-3xl mx-auto">
-          <p className="text-sm font-medium text-orange-500 uppercase tracking-widest mb-4">
-            About Creometric
-          </p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6">
-            Powering Impactful Results
-          </h1>
-          <p className="text-lg text-[#8A8A8A] leading-relaxed max-w-2xl mx-auto">
-            Creometric is the digital marketing arm of{" "}
-            <a
-              href="https://kilowott.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-orange-500 hover:text-orange-500 transition-colors font-medium"
-            >
-              Kilowott
-            </a>
-            , a dynamic, results-driven firm with over 10 years of experience.
-            Founded in 2014 and headquartered in Goa, we specialise in turning
-            digital presence into measurable business growth.
-          </p>
+        <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-sm font-medium text-orange-500 uppercase tracking-widest mb-4 font-inter">
+              About Creometric
+            </p>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 font-sora" style={{ letterSpacing: "-0.04em" }}>
+              Powering Impactful Results
+            </h1>
+            <p className="text-lg text-[#8A8A8A] leading-relaxed max-w-2xl font-inter" style={{ lineHeight: "1.6" }}>
+              Creometric is the digital marketing arm of{" "}
+              <a
+                href="https://kilowott.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-orange-500 hover:text-orange-400 transition-colors font-medium"
+              >
+                Kilowott
+              </a>
+              , a dynamic, results-driven firm with over 10 years of experience.
+              Founded in 2014 and headquartered in Goa, we specialise in turning
+              digital presence into measurable business growth.
+            </p>
+          </div>
+          <div className="relative rounded-2xl overflow-hidden h-80 lg:h-96">
+            <Image
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+              alt="Creative team collaborating on digital strategy"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/60 to-transparent" />
+          </div>
         </div>
       </section>
 

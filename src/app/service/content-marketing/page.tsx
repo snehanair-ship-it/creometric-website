@@ -12,6 +12,7 @@ export default function ContentMarketingPage() {
     <ServicePageLayout
       title="Content Marketing That Builds Authority and Drives Revenue"
       subtitle="Content Marketing Services in Goa"
+      heroImage="https://images.unsplash.com/photo-1455849318743-b2233052fcff?w=1200&q=80"
       description="Great content does more than fill up your blog — it builds trust, answers your audience's questions, and moves them closer to becoming customers. Creometric creates strategic content marketing campaigns for Goa businesses that attract organic traffic, establish thought leadership, and generate measurable business results."
       benefits={[
         "Data-driven content strategy built around the keywords and topics your Goa audience is actively searching for",

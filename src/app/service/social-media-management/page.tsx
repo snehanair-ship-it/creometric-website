@@ -12,6 +12,7 @@ export default function SocialMediaManagementPage() {
     <ServicePageLayout
       title="Social Media Management That Drives Real Business Growth"
       subtitle="Social Media Management in Goa"
+      heroImage="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=1200&q=80"
       description="Your customers in Goa are scrolling right now. Creometric builds and manages social media strategies that turn followers into paying customers — with consistent content, active community engagement, and measurable ROI for businesses across Goa and beyond."
       benefits={[
         "Dedicated social media strategist who understands the Goa market and local audience behaviour",

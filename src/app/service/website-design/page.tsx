@@ -12,6 +12,7 @@ export default function WebsiteDesignPage() {
     <ServicePageLayout
       title="Website Design That Converts Visitors Into Customers"
       subtitle="Website Design & Development in Goa"
+      heroImage="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&q=80"
       description="Your website is your most important salesperson — it works 24/7 and never takes a day off. Creometric designs and develops high-performance websites for Goa businesses that load fast, look stunning on every device, and are built from the ground up to generate leads and sales."
       benefits={[
         "Custom designs tailored to your brand — no cookie-cutter templates that make you look like every other business in Goa",

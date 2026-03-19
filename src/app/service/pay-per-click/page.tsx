@@ -12,6 +12,7 @@ export default function PayPerClickPage() {
     <ServicePageLayout
       title="Pay-Per-Click Advertising That Delivers Leads From Day One"
       subtitle="PPC & Paid Advertising in Goa"
+      heroImage="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&q=80"
       description="Stop wasting money on ads that do not convert. Creometric manages precision-targeted PPC campaigns on Google, Meta, and LinkedIn that put your business in front of high-intent customers in Goa and across India — with every rupee tracked and optimised for maximum return."
       benefits={[
         "Google Ads certified team with experience managing campaigns for Goa businesses across industries",

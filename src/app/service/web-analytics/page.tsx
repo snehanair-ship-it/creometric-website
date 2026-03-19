@@ -12,6 +12,7 @@ export default function WebAnalyticsPage() {
     <ServicePageLayout
       title="Web Analytics That Turn Raw Data Into Actionable Growth Insights"
       subtitle="Web Analytics & Tracking in Goa"
+      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80"
       description="You cannot improve what you do not measure. Creometric helps Goa businesses set up accurate tracking, build custom dashboards, and interpret analytics data so every marketing decision is backed by evidence — not guesswork."
       benefits={[
         "Google Analytics 4 (GA4) setup and configuration tailored to your business goals and conversion events",

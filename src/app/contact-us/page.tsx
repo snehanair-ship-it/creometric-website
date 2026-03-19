@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
@@ -11,16 +12,27 @@ export default function Contact() {
   return (
     <div className="bg-[#0A0A0A] text-white">
       {/* Hero */}
-      <section className="pt-24 sm:pt-32 pb-12 px-6 text-center">
-        <p className="text-sm font-medium text-orange-500 uppercase tracking-wide mb-3">
-          Contact Us
-        </p>
-        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
-          Let&apos;s Talk Growth
-        </h1>
-        <p className="text-lg text-[#8A8A8A] max-w-xl mx-auto">
-          Have a project in mind? We reply within <strong>24 hours</strong>.
-        </p>
+      <section className="pt-24 sm:pt-32 pb-12 px-6 text-center relative overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80"
+            alt=""
+            fill
+            className="object-cover opacity-10"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/60 to-[#0A0A0A]" />
+        </div>
+        <div className="relative z-10">
+          <p className="text-sm font-medium text-orange-500 uppercase tracking-wide mb-3 font-inter">
+            Contact Us
+          </p>
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4 font-sora">
+            Let&apos;s Talk Growth
+          </h1>
+          <p className="text-lg text-[#8A8A8A] max-w-xl mx-auto font-inter">
+            Have a project in mind? We reply within <strong className="text-white">24 hours</strong>.
+          </p>
+        </div>
       </section>
 
       <section className="pb-20 px-6">
