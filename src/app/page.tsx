@@ -108,11 +108,11 @@ export default function Home() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.05] animate-fade-up opacity-0 delay-100 font-sora" style={{ letterSpacing: "-0.04em" }}>
-                AI-Driven Growth
+                AI That Grows
                 <br />
-                For Brands That
+                Your Brand.
                 <br />
-                <span className="bg-gradient-to-r from-orange-500 to-amber-400 bg-clip-text text-transparent">Demand Results.</span>
+                <span className="bg-gradient-to-r from-orange-500 to-amber-400 bg-clip-text text-transparent">Faster.</span>
               </h1>
 
               <p className="mt-6 text-lg text-[#8A8A8A] max-w-lg leading-relaxed animate-fade-up opacity-0 delay-200 font-inter" style={{ lineHeight: "1.6" }}>
