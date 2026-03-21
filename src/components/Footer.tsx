@@ -9,12 +9,12 @@ const quickLinks = [
 ];
 
 const services = [
-  { href: "/service/", label: "SEO" },
-  { href: "/service/", label: "Social Media" },
-  { href: "/service/", label: "PPC / Google Ads" },
-  { href: "/service/", label: "Website Design" },
-  { href: "/service/", label: "Content Marketing" },
-  { href: "/service/", label: "Web Analytics" },
+  { href: "/service/", label: "AI-Powered SEO" },
+  { href: "/service/", label: "AI Social Intelligence" },
+  { href: "/service/", label: "Smart Ad Optimization" },
+  { href: "/service/", label: "Intelligent Web Design" },
+  { href: "/service/", label: "AI Content Engine" },
+  { href: "/service/", label: "Predictive Analytics" },
 ];
 
 export default function Footer() {
@@ -31,7 +31,7 @@ export default function Footer() {
               <span className="text-white font-sora font-bold tracking-widest text-sm">CREOMETRIC</span>
             </div>
             <p className="text-sm leading-relaxed mb-6 font-inter" style={{ lineHeight: "1.6" }}>
-              Goa&apos;s most trusted digital marketing agency. Strategy, design, and technology for measurable growth.
+              AI-powered digital growth agency. Intelligent automation, predictive analytics, and data-driven strategies for measurable results.
             </p>
             <div className="flex gap-3">
               <a

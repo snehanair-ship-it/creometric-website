@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Web Analytics & Data Tracking Services in Goa | Creometric",
+  title: "Predictive Analytics & AI-Powered Tracking in Goa | Creometric",
   description:
-    "Professional web analytics and data tracking services in Goa. Creometric sets up GA4, conversion tracking, and custom dashboards so you can make data-driven marketing decisions.",
+    "Predictive analytics and AI-powered data tracking in Goa. Creometric sets up intelligent dashboards, anomaly detection, and predictive models so every marketing decision is backed by AI.",
 };
 
 export default function WebAnalyticsPage() {
   return (
     <ServicePageLayout
-      title="Web Analytics That Turn Raw Data Into Actionable Growth Insights"
-      subtitle="Web Analytics & Tracking in Goa"
+      title="Predictive Analytics That Turn Raw Data Into Your Next Growth Move"
+      subtitle="AI-Powered Analytics & Tracking in Goa"
       heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80"
-      description="You cannot improve what you do not measure. Creometric helps Goa businesses set up accurate tracking, build custom dashboards, and interpret analytics data so every marketing decision is backed by evidence — not guesswork."
+      description="You cannot improve what you do not measure. Creometric helps Goa businesses set up AI-powered tracking, build predictive dashboards with anomaly detection, and turn analytics data into actionable growth insights — so every decision is backed by intelligence, not guesswork."
       benefits={[
         "Google Analytics 4 (GA4) setup and configuration tailored to your business goals and conversion events",
         "Google Tag Manager implementation for clean, flexible tracking without constant developer involvement",

@@ -64,7 +64,7 @@ export default function ClientLogos() {
     <section className="py-16 sm:py-20 bg-[#0A0A0A] border-y border-[#1A1A1A]">
       <div className="max-w-6xl mx-auto px-6 mb-10">
         <p className="text-center text-xs font-bold text-[#525252] uppercase tracking-[0.2em] font-inter">
-          Trusted by leading brands across Goa &amp; India
+          Trusted by leading brands across Goa &amp; India for AI-powered growth
         </p>
       </div>
       <div className="space-y-6">

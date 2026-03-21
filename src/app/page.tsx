@@ -9,14 +9,14 @@ import CTABanner from "@/components/CTABanner";
 
 export const metadata: Metadata = {
   title:
-    "Digital Marketing Agency in Goa | SEO, Social Media & PPC — Creometric",
+    "AI-Powered Digital Growth Agency | SEO, Ads & Automation — Creometric",
   description:
-    "Goa's most trusted digital marketing agency. We deliver real results in SEO, social media, PPC and web design for local businesses. Get a free audit today.",
+    "Creometric uses AI and machine learning to drive measurable growth. Predictive SEO, intelligent ad optimization, and automated marketing — powered by data, not guesswork.",
   openGraph: {
     title:
-      "Digital Marketing Agency in Goa | SEO, Social Media & PPC — Creometric",
+      "AI-Powered Digital Growth Agency | SEO, Ads & Automation — Creometric",
     description:
-      "Goa's most trusted digital marketing agency. We deliver real results in SEO, social media, PPC and web design for local businesses. Get a free audit today.",
+      "Creometric uses AI and machine learning to drive measurable growth. Predictive SEO, intelligent ad optimization, and automated marketing — powered by data, not guesswork.",
   },
 };
 
@@ -25,7 +25,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: "Creometric",
   description:
-    "Digital marketing agency in Goa, India offering SEO, social media management, PPC, website design, content marketing and web analytics.",
+    "AI-powered digital growth agency offering predictive SEO, intelligent ad optimization, marketing automation, website design, content strategy, and advanced analytics.",
   url: "https://creometric.com",
   telephone: "+919850950259",
   address: {
@@ -56,26 +56,26 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "How much does digital marketing cost in Goa?",
+      name: "How does AI improve my marketing results?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Digital marketing costs in Goa vary based on your goals and scope. Basic packages start around \u20B915,000\u2013\u20B925,000/month. Comprehensive strategies range from \u20B940,000\u2013\u20B91,00,000+/month.",
+        text: "Our AI tools analyze millions of data points in real time — from search trends to audience behavior — so we can predict what works before spending your budget. This means faster results, lower cost per lead, and campaigns that get smarter over time.",
       },
     },
     {
       "@type": "Question",
-      name: "How long does SEO take to show results?",
+      name: "How long does it take to see results?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most businesses see measurable improvements within 3\u20136 months. Competitive industries may take 6\u201312 months.",
+        text: "AI-powered PPC campaigns often show results within the first week. SEO improvements typically appear within 3–6 months, but our predictive models accelerate this by targeting high-opportunity keywords early.",
       },
     },
     {
       "@type": "Question",
-      name: "What services does Creometric offer?",
+      name: "What AI-powered services does Creometric offer?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "SEO, Social Media Management, PPC/Google Ads, Website Design, Content Marketing, and Web Analytics.",
+        text: "Predictive SEO, intelligent ad optimization, AI-driven content strategy, smart social media management, conversion-focused web design, and advanced predictive analytics.",
       },
     },
   ],
@@ -104,19 +104,19 @@ export default function Home() {
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-orange-500/20 bg-orange-500/10 px-4 py-2 mb-8 animate-fade-up opacity-0">
                 <span className="w-2 h-2 rounded-full bg-orange-400 animate-pulse" />
-                <span className="text-[11px] font-bold text-orange-500 uppercase tracking-[0.15em] font-inter">Digital Marketing Agency in Goa</span>
+                <span className="text-[11px] font-bold text-orange-500 uppercase tracking-[0.15em] font-inter">AI-Powered Digital Growth Agency</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.05] animate-fade-up opacity-0 delay-100 font-sora" style={{ letterSpacing: "-0.04em" }}>
-                We Build Brands
+                AI-Driven Growth
                 <br />
-                That <span className="bg-gradient-to-r from-orange-500 to-amber-400 bg-clip-text text-transparent">Dominate</span>
+                For Brands That
                 <br />
-                Online.
+                <span className="bg-gradient-to-r from-orange-500 to-amber-400 bg-clip-text text-transparent">Demand Results.</span>
               </h1>
 
               <p className="mt-6 text-lg text-[#8A8A8A] max-w-lg leading-relaxed animate-fade-up opacity-0 delay-200 font-inter" style={{ lineHeight: "1.6" }}>
-                SEO. Social Media. PPC. Web Design. We combine strategy, design, and technology to deliver measurable growth for businesses across Goa and India.
+                We combine AI, predictive analytics, and intelligent automation to drive measurable growth. From SEO to paid ads — every decision is powered by data, not guesswork.
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row gap-4 animate-fade-up opacity-0 delay-300">
@@ -140,19 +140,19 @@ export default function Home() {
                   <div className="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center">
                     <svg className="w-4 h-4 text-green-400" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
                   </div>
-                  <span className="text-sm text-[#525252] font-inter font-medium">250+ Projects</span>
+                  <span className="text-sm text-[#525252] font-inter font-medium">250+ AI-Driven Campaigns</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center">
                     <svg className="w-4 h-4 text-blue-400" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" /></svg>
                   </div>
-                  <span className="text-sm text-[#525252] font-inter font-medium">5 Cr+ ROI</span>
+                  <span className="text-sm text-[#525252] font-inter font-medium">5 Cr+ ROI Generated</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 rounded-full bg-orange-500/10 flex items-center justify-center">
                     <svg className="w-4 h-4 text-orange-400" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" /></svg>
                   </div>
-                  <span className="text-sm text-[#525252] font-inter font-medium">20+ Active Clients</span>
+                  <span className="text-sm text-[#525252] font-inter font-medium">Real-Time AI Insights</span>
                 </div>
               </div>
             </div>
@@ -168,8 +168,8 @@ export default function Home() {
                   {/* Header */}
                   <div className="flex items-center justify-between mb-6">
                     <div>
-                      <p className="text-[9px] text-[#525252] uppercase tracking-[0.2em] font-bold font-inter">Client Dashboard</p>
-                      <p className="text-sm font-bold text-white mt-0.5 font-sora">Organic Traffic Growth</p>
+                      <p className="text-[9px] text-[#525252] uppercase tracking-[0.2em] font-bold font-inter">AI Analytics Dashboard</p>
+                      <p className="text-sm font-bold text-white mt-0.5 font-sora">AI-Predicted Growth</p>
                     </div>
                     <span className="inline-flex items-center gap-1 rounded-full bg-green-500/10 px-3 py-1.5 text-xs font-semibold text-green-400 font-inter">
                       <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" /></svg>

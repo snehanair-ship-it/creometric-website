@@ -25,7 +25,16 @@ export default function LeadForm() {
       const result = await res.json();
       if (!result.success) throw new Error("Submission failed");
 
-      sendGAEvent("form_submission", { form_name: "lead-form" });
+      sendGAEvent("generate_lead", {
+        form_name: "lead-form",
+        currency: "INR",
+        value: "1",
+      });
+
+      if (typeof window !== "undefined" && typeof window.fbq === "function") {
+        window.fbq("track", "Lead", { content_name: "lead-form" });
+      }
+
       router.push("/thank-you");
     } catch {
       alert("Something went wrong. Please try again or call us directly.");
@@ -45,14 +54,14 @@ export default function LeadForm() {
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight font-sora mb-4" style={{ letterSpacing: "-0.025em", lineHeight: "1.2" }}>
-              Let&apos;s Build Something Great Together
+              Get Your Free AI-Powered Audit
             </h2>
 
             <div className="mt-8 space-y-4">
               {[
-                "Free SEO & website audit report",
-                "Competitor analysis with actionable insights",
-                "Custom 90-day growth roadmap",
+                "AI-powered website & SEO health analysis",
+                "Competitor intelligence with opportunity scoring",
+                "Custom AI-driven 90-day growth roadmap",
               ].map((benefit) => (
                 <div key={benefit} className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full bg-orange-500/10 flex items-center justify-center flex-shrink-0">
@@ -66,7 +75,7 @@ export default function LeadForm() {
 
           {/* Right: Form */}
           <div className="rounded-2xl bg-[#1A1A1A] border border-[#2A2A2A] p-8 lg:p-10">
-            <h3 className="text-xl font-bold text-white font-sora mb-6">Request Your Free Audit</h3>
+            <h3 className="text-xl font-bold text-white font-sora mb-6">Start Your AI-Powered Audit</h3>
             <form onSubmit={handleSubmit} className="space-y-5">
 
               <div>
@@ -128,7 +137,7 @@ export default function LeadForm() {
                 type="submit"
                 className="w-full rounded-lg bg-gradient-to-b from-orange-500 to-orange-600 text-white py-3.5 text-base font-semibold hover:from-orange-400 hover:to-orange-500 transition-all shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40 font-inter"
               >
-                Get My Free Audit
+                Get My AI Audit — Free
               </button>
             </form>
           </div>

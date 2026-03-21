@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Search Engine Optimization",
-    description: "Rank higher, drive organic traffic, and build authority with data-driven SEO strategies.",
+    title: "AI-Powered SEO",
+    description: "Predictive keyword targeting, automated content optimization, and AI-driven link strategies that outrank competitors before they even see you coming.",
     href: "/service/search-engine-optimisation/",
     metric: "+340% avg traffic growth",
     color: "orange",
@@ -16,8 +16,8 @@ const services = [
     ),
   },
   {
-    title: "Website Design",
-    description: "Fast, beautiful, conversion-optimized websites that turn visitors into customers.",
+    title: "Intelligent Web Design",
+    description: "AI-optimized, conversion-focused websites with smart layouts, predictive UX, and performance tuning that turns every visitor into a lead.",
     href: "/service/website-design/",
     metric: "3.2s → 0.8s load time",
     color: "blue",
@@ -28,8 +28,8 @@ const services = [
     ),
   },
   {
-    title: "Social Media",
-    description: "Build engaged communities and amplify your brand across every social platform.",
+    title: "AI Social Intelligence",
+    description: "Machine-learning-powered content scheduling, sentiment analysis, and audience targeting that builds communities on autopilot.",
     href: "/service/social-media-management/",
     metric: "4.8x engagement lift",
     color: "purple",
@@ -40,8 +40,8 @@ const services = [
     ),
   },
   {
-    title: "PPC / Google Ads",
-    description: "Maximize every rupee with targeted, high-converting paid advertising campaigns.",
+    title: "Smart Ad Optimization",
+    description: "AI-driven bid management, predictive audience targeting, and real-time campaign optimization that maximizes every rupee of ad spend.",
     href: "/service/pay-per-click/",
     metric: "5.2x average ROAS",
     color: "yellow",
@@ -52,8 +52,8 @@ const services = [
     ),
   },
   {
-    title: "Content Marketing",
-    description: "Strategic content that builds trust, drives traffic, and converts readers into buyers.",
+    title: "AI Content Engine",
+    description: "Data-driven content strategy powered by topic clustering, search intent analysis, and AI-assisted creation that ranks and converts.",
     href: "/service/content-marketing/",
     metric: "2.1M+ impressions",
     color: "pink",
@@ -64,8 +64,8 @@ const services = [
     ),
   },
   {
-    title: "Web Analytics",
-    description: "Full-funnel tracking and actionable insights to optimize every marketing decision.",
+    title: "Predictive Analytics",
+    description: "AI-powered dashboards, anomaly detection, and predictive modeling that turns raw data into your next growth move.",
     href: "/service/web-analytics/",
     metric: "100% full-funnel tracking",
     color: "cyan",
@@ -94,14 +94,14 @@ export default function Services() {
           <div className="flex flex-col items-center gap-4 mb-6">
             <div className="w-10 h-[3px] bg-orange-500 rounded-full" />
             <span className="text-xs font-bold text-orange-500 uppercase tracking-[0.2em] font-inter">
-              Our Services
+              AI-Powered Solutions
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight font-sora" style={{ letterSpacing: "-0.025em" }}>
-            Everything You Need to Dominate Online
+            Intelligent Marketing That Learns and Adapts
           </h2>
           <p className="text-[#8A8A8A] mt-4 max-w-xl mx-auto text-base font-inter">
-            End-to-end digital marketing solutions tailored for growth
+            AI-powered tools and strategies that optimize in real time — so every campaign gets smarter
           </p>
         </div>
 

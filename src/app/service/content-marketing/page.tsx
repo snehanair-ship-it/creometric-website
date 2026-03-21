@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Content Marketing Services in Goa | Creometric",
+  title: "AI-Driven Content Marketing in Goa | Creometric",
   description:
-    "Strategic content marketing services in Goa by Creometric. We create blogs, videos, infographics, and email campaigns that attract, engage, and convert your target audience.",
+    "AI-driven content marketing in Goa by Creometric. We use topic clustering, search intent analysis, and AI-assisted creation to build content strategies that rank, engage, and convert.",
 };
 
 export default function ContentMarketingPage() {
   return (
     <ServicePageLayout
-      title="Content Marketing That Builds Authority and Drives Revenue"
-      subtitle="Content Marketing Services in Goa"
+      title="AI-Powered Content That Builds Authority and Drives Revenue"
+      subtitle="AI-Driven Content Marketing in Goa"
       heroImage="https://images.unsplash.com/photo-1455849318743-b2233052fcff?w=1200&q=80"
-      description="Great content does more than fill up your blog — it builds trust, answers your audience's questions, and moves them closer to becoming customers. Creometric creates strategic content marketing campaigns for Goa businesses that attract organic traffic, establish thought leadership, and generate measurable business results."
+      description="Great content does more than fill up your blog — it builds trust, answers your audience's questions, and moves them closer to becoming customers. Creometric uses AI-powered topic clustering, search intent analysis, and predictive content modeling to create campaigns for Goa businesses that attract organic traffic, establish thought leadership, and generate measurable results."
       benefits={[
         "Data-driven content strategy built around the keywords and topics your Goa audience is actively searching for",
         "Professional blog writing, articles, and long-form guides that rank on Google and position you as an industry expert",

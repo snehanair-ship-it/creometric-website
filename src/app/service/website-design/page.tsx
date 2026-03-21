@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Website Design & Development in Goa | Creometric",
+  title: "AI-Optimized Website Design in Goa | Creometric",
   description:
-    "Professional website design and development services in Goa. Creometric builds fast, mobile-friendly, SEO-optimised websites that convert visitors into customers for local businesses.",
+    "AI-optimized website design in Goa. Creometric builds intelligent, conversion-focused websites with predictive UX, smart layouts, and AI-driven performance tuning for Goa businesses.",
 };
 
 export default function WebsiteDesignPage() {
   return (
     <ServicePageLayout
-      title="Website Design That Converts Visitors Into Customers"
-      subtitle="Website Design & Development in Goa"
+      title="AI-Optimized Websites That Convert Visitors Into Customers"
+      subtitle="Intelligent Website Design & Development in Goa"
       heroImage="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&q=80"
-      description="Your website is your most important salesperson — it works 24/7 and never takes a day off. Creometric designs and develops high-performance websites for Goa businesses that load fast, look stunning on every device, and are built from the ground up to generate leads and sales."
+      description="Your website is your most important salesperson — it works 24/7 and never takes a day off. Creometric uses AI-driven design principles and performance optimization to build websites for Goa businesses that load fast, adapt to user behaviour, and are engineered from the ground up to maximize conversions."
       benefits={[
         "Custom designs tailored to your brand — no cookie-cutter templates that make you look like every other business in Goa",
         "Mobile-first, responsive development that ensures a seamless experience on phones, tablets, and desktops",

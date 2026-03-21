@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "About Us | Creometric — Digital Marketing Agency in Goa",
+  title: "About Us | Creometric — AI-Powered Digital Growth Agency in Goa",
   description:
-    "Creometric is the digital marketing arm of Kilowott, a results-driven firm with 10+ years of experience. Based in Goa, we deliver measurable growth through SEO, social media, PPC and web design.",
+    "Creometric is the AI-powered growth engine of Kilowott. Based in Goa with 10+ years of experience, we combine machine learning, predictive analytics, and intelligent automation to deliver measurable business results.",
 };
 
 const process = [
@@ -12,7 +12,7 @@ const process = [
     step: "01",
     title: "Discover",
     description:
-      "We deep-dive into your business, audience, and competitors to understand what makes you unique.",
+      "Our AI scans your market, competitors, and audience data to uncover growth opportunities no manual audit could find.",
     icon: (
       <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
         <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -23,7 +23,7 @@ const process = [
     step: "02",
     title: "Strategize",
     description:
-      "We craft a custom roadmap with clear goals, timelines, and KPIs — because true success comes when strategy and execution work in tandem.",
+      "We build an AI-informed roadmap with predictive KPIs, intelligent budget allocation, and data-backed timelines tailored to your Goa business.",
     icon: (
       <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5" />
@@ -34,7 +34,7 @@ const process = [
     step: "03",
     title: "Execute",
     description:
-      "Our team brings the strategy to life — from content and ads to SEO and design — delivering end-to-end solutions from ideation through implementation.",
+      "Our team deploys AI-optimized campaigns — from predictive SEO and smart ads to automated content — with real-time performance monitoring.",
     icon: (
       <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
         <path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
@@ -45,7 +45,7 @@ const process = [
     step: "04",
     title: "Optimize",
     description:
-      "We track every metric, A/B test relentlessly, and refine until the numbers deliver measurable outcomes and tangible business growth.",
+      "Machine learning continuously analyzes campaign data, auto-adjusts targeting, and surfaces insights — so your marketing gets smarter every day.",
     icon: (
       <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
         <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
@@ -56,30 +56,30 @@ const process = [
 
 const values = [
   {
-    title: "Strategy Meets Execution",
-    description: "True business success is achieved when strategy and execution work in tandem. We do both.",
+    title: "AI-First Thinking",
+    description: "Every strategy starts with data. We use AI and machine learning to find opportunities before your competitors do.",
   },
   {
-    title: "Accountability & Excellence",
-    description: "We own every campaign like it's our own business — transparent reporting, no fluff.",
+    title: "Radical Transparency",
+    description: "Real-time dashboards, no vanity metrics, no fluff — you see exactly what our AI is doing and why.",
   },
   {
-    title: "Rooted in Goa",
-    description: "Our production base is in Goa, chosen for its culture, creativity, and work-life balance.",
+    title: "Rooted in Goa, Built for Scale",
+    description: "Our Goa base fuels creativity. Our AI infrastructure scales your marketing across India and beyond.",
   },
   {
-    title: "End-to-End Solutions",
-    description: "From ideation through implementation, we handle every step so you can focus on your business.",
+    title: "Intelligent Automation",
+    description: "From bid management to content scheduling — we automate the repetitive so your team can focus on growth.",
   },
 ];
 
 const capabilities = [
-  "SEO & Organic Growth",
-  "Social Media Management",
-  "PPC & Google Ads",
-  "Website Design & Development",
-  "Content Marketing",
-  "Web Analytics & Reporting",
+  "AI-Powered SEO",
+  "Intelligent Social Media",
+  "Smart Ad Optimization",
+  "AI-Driven Web Design",
+  "Automated Content Strategy",
+  "Predictive Analytics",
 ];
 
 export default function About() {
@@ -94,10 +94,10 @@ export default function About() {
               About Creometric
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 font-sora" style={{ letterSpacing: "-0.04em" }}>
-              Powering Impactful Results
+              AI-Powered Growth, Made in Goa
             </h1>
             <p className="text-lg text-[#8A8A8A] leading-relaxed max-w-2xl font-inter" style={{ lineHeight: "1.6" }}>
-              Creometric is the digital marketing arm of{" "}
+              Creometric is the AI-powered growth engine of{" "}
               <a
                 href="https://kilowott.com"
                 target="_blank"
@@ -106,9 +106,10 @@ export default function About() {
               >
                 Kilowott
               </a>
-              , a dynamic, results-driven firm with over 10 years of experience.
-              Founded in 2014 and headquartered in Goa, we specialise in turning
-              digital presence into measurable business growth.
+              , a technology-driven firm with over 10 years of experience.
+              Headquartered in Goa, we combine artificial intelligence, predictive
+              analytics, and intelligent automation to turn digital presence
+              into measurable business growth.
             </p>
           </div>
           <div className="relative rounded-2xl overflow-hidden h-80 lg:h-96">
@@ -149,7 +150,7 @@ export default function About() {
                 year: "2018",
                 title: "Creometric Joins the Family",
                 description:
-                  "Acquired Creometric to bring full-service digital marketing capabilities — SEO, social media, PPC, and content.",
+                  "Acquired Creometric to bring AI-powered digital marketing capabilities — predictive SEO, intelligent ads, and data-driven content.",
               },
               {
                 year: "2020",
@@ -159,9 +160,9 @@ export default function About() {
               },
               {
                 year: "Today",
-                title: "Kilowott — One Unified Force",
+                title: "Kilowott — AI-Powered & Global",
                 description:
-                  "Operating across Nordics, EU, APAC, EMEA, and USA — serving Telecom, Fintech, Retail, Media, and more.",
+                  "Operating across Nordics, EU, APAC, EMEA, and USA — leveraging AI to serve Telecom, Fintech, Retail, Media, and more.",
               },
             ].map((item, i) => (
               <div
@@ -206,10 +207,10 @@ export default function About() {
             </div>
             <h2 className="text-xl font-bold mb-3">Our Mission</h2>
             <p className="text-[#8A8A8A] leading-relaxed text-sm">
-              To empower businesses with data-driven digital strategies that
-              deliver measurable growth. We combine creativity with analytics to
-              build marketing that actually works — ensuring every campaign
-              drives tangible business outcomes.
+              To empower businesses in Goa and beyond with AI-driven marketing
+              that delivers measurable growth. We combine machine learning with
+              human creativity to build campaigns that learn, adapt, and
+              continuously optimize for tangible business outcomes.
             </p>
           </div>
           <div className="rounded-2xl border border-[#2A2A2A]/60 bg-gradient-to-br from-white to-gray-50/50 p-8 sm:p-10">
@@ -220,11 +221,11 @@ export default function About() {
             </div>
             <h2 className="text-xl font-bold mb-3">Our Approach</h2>
             <p className="text-[#8A8A8A] leading-relaxed text-sm">
-              We don&apos;t believe in cookie-cutter solutions. Every business
-              gets a tailored strategy built around their unique goals, audience,
-              and budget. Backed by Kilowott&apos;s full-stack capabilities in
-              software, design, and animation, we deliver what standalone
-              agencies can&apos;t.
+              We don&apos;t believe in cookie-cutter solutions. Our AI analyzes
+              your unique market position, audience behaviour, and competitive
+              landscape to build strategies that are impossible to replicate.
+              Backed by Kilowott&apos;s full-stack AI and engineering capabilities,
+              we deliver what traditional agencies can&apos;t.
             </p>
           </div>
         </div>
@@ -254,7 +255,7 @@ export default function About() {
             Our Expertise
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold mb-10">
-            What We Bring to the Table
+            AI-Powered Capabilities
           </h2>
           <div className="flex flex-wrap justify-center gap-3">
             {capabilities.map((cap) => (
@@ -267,9 +268,9 @@ export default function About() {
             ))}
           </div>
           <p className="text-[#525252] text-sm mt-8 max-w-xl mx-auto">
-            Plus access to Kilowott&apos;s full ecosystem — software
-            development, UI/UX design, animation, and consulting — for
-            truly integrated digital solutions.
+            Plus access to Kilowott&apos;s full ecosystem — AI engineering,
+            custom software development, UI/UX design, and consulting — for
+            truly intelligent, integrated digital solutions.
           </p>
         </div>
       </section>
@@ -346,11 +347,11 @@ export default function About() {
             Backed by a Global Ecosystem
           </h2>
           <p className="text-[#8A8A8A] leading-relaxed max-w-2xl mx-auto">
-            As part of Kilowott, Creometric has access to capabilities most
-            agencies can only dream of — from custom software development and
-            app engineering to animation and UI/UX design. When you work with
-            us, you get the agility of a focused marketing team with the
-            firepower of a full-scale digital firm.
+            As part of Kilowott, Creometric has access to AI and engineering
+            capabilities most agencies can only dream of — from custom ML models
+            and intelligent automation to full-stack software development. When
+            you work with us, you get the agility of a Goa-based marketing
+            team with the AI firepower of a global technology firm.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3 text-xs text-[#525252]">
             {[
@@ -373,10 +374,10 @@ export default function About() {
 
       {/* CTA */}
       <section className="py-20 px-6 text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ready to Grow Your Brand?</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ready to Grow Smarter with AI?</h2>
         <p className="text-[#8A8A8A] mb-8 max-w-lg mx-auto">
-          Let&apos;s build something great together. No contracts, no
-          commitments — just results.
+          Get a free AI-powered audit of your digital presence. No contracts,
+          no commitments — just intelligent insights and a clear growth plan.
         </p>
         <a
           href="/contact-us"

@@ -4,29 +4,29 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "How much does digital marketing cost in Goa?",
+    question: "How does AI improve my marketing results?",
     answer:
-      "Basic packages start around \u20B915,000\u2013\u20B925,000/month. Comprehensive strategies range from \u20B940,000\u2013\u20B91,00,000+/month depending on goals and scope.",
+      "Our AI tools analyze millions of data points in real time \u2014 from search trends to audience behavior \u2014 so we can predict what works before spending your budget. This means faster results, lower cost per lead, and campaigns that get smarter over time.",
   },
   {
-    question: "How long does SEO take to show results?",
+    question: "How long does it take to see results?",
     answer:
-      "Most businesses see measurable improvements within 3\u20136 months. Competitive industries may take 6\u201312 months for significant results.",
+      "AI-powered PPC campaigns often show results within the first week. SEO improvements typically appear within 3\u20136 months, but our predictive models accelerate this by targeting high-opportunity keywords early.",
   },
   {
-    question: "What services does Creometric offer?",
+    question: "What AI-powered services does Creometric offer?",
     answer:
-      "SEO, Social Media Management, PPC/Google Ads, Website Design, Content Marketing, and Web Analytics \u2014 all under one roof.",
+      "Predictive SEO, intelligent ad optimization, AI-driven content strategy, smart social media management, conversion-focused web design, and advanced predictive analytics \u2014 all powered by machine learning and real-time data.",
   },
   {
-    question: "Do you work with businesses outside Goa?",
+    question: "Do you work with businesses outside India?",
     answer:
-      "Absolutely! While we\u2019re based in Goa, we work with clients across India and globally through our parent company Kilowott.",
+      "Absolutely. We work with clients globally through our parent company Kilowott, which operates across the Nordics, EU, APAC, EMEA, and USA.",
   },
   {
-    question: "What makes Creometric different?",
+    question: "What makes Creometric different from other agencies?",
     answer:
-      "We\u2019re backed by Kilowott\u2019s full-stack capabilities \u2014 software, design, and marketing. No vanity metrics, just transparent ROI-focused strategies.",
+      "We don\u2019t just run campaigns \u2014 we build intelligent marketing systems. Backed by Kilowott\u2019s full-stack AI and engineering capabilities, we deliver what traditional agencies can\u2019t: marketing that learns, adapts, and optimizes itself.",
   },
 ];
 

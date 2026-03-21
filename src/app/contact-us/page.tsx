@@ -3,9 +3,9 @@ import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Creometric — Digital Marketing Agency in Goa",
+  title: "Contact Us | Creometric — AI-Powered Growth Agency in Goa",
   description:
-    "Get in touch with Creometric. Call +91 98509 50259 or fill out the form. We reply within 24 hours.",
+    "Get in touch with Creometric, Goa's AI-powered digital growth agency. Call +91 98509 50259 or fill out the form. We reply within 24 hours.",
 };
 
 export default function Contact() {
@@ -27,7 +27,7 @@ export default function Contact() {
             Contact Us
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4 font-sora">
-            Let&apos;s Talk Growth
+            Let&apos;s Talk AI-Powered Growth
           </h1>
           <p className="text-lg text-[#8A8A8A] max-w-xl mx-auto font-inter">
             Have a project in mind? We reply within <strong className="text-white">24 hours</strong>.

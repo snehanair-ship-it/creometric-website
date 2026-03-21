@@ -3,11 +3,11 @@ export default function CTABanner() {
     <section className="py-20 sm:py-28 px-6 bg-gradient-to-br from-[#1A0800] via-[#0A0A0A] to-[#0A0800] relative overflow-hidden">
       <div className="max-w-6xl mx-auto text-center relative z-10">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight font-sora" style={{ letterSpacing: "-0.04em" }}>
-          Ready to Dominate Your Market?
+          Ready to Grow Smarter with AI?
         </h2>
 
         <p className="text-[#8A8A8A] mt-6 text-lg max-w-xl mx-auto leading-relaxed font-inter">
-          Get a free SEO audit, competitor analysis, and a custom 90-day growth roadmap — no strings attached.
+          Get a free AI-powered audit of your digital presence — with competitor intelligence, opportunity scoring, and a custom growth roadmap.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">

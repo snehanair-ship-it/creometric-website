@@ -3,10 +3,10 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const stats = [
-  { target: 347, suffix: "K+", label: "People Reached" },
-  { target: 250, suffix: "+", label: "Projects Delivered" },
-  { target: 284000, suffix: "", label: "Clicks Generated", format: "indian" as const },
-  { target: 5, suffix: " Cr+", label: "ROI Generated" },
+  { target: 347, suffix: "K+", label: "Audience Reached via AI" },
+  { target: 250, suffix: "+", label: "AI-Optimized Campaigns" },
+  { target: 284000, suffix: "", label: "Data Points Analyzed", format: "indian" as const },
+  { target: 5, suffix: " Cr+", label: "Revenue Generated" },
 ];
 
 function formatNumber(n: number, format?: "indian") {

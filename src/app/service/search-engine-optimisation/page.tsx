@@ -2,38 +2,38 @@ import type { Metadata } from "next";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "SEO Services in Goa | Search Engine Optimisation | Creometric",
+  title: "AI-Powered SEO Services in Goa | Creometric",
   description:
-    "Top-rated SEO services in Goa by Creometric. We help businesses rank higher on Google with technical SEO, local SEO, content optimisation, and link building strategies.",
+    "AI-powered SEO services in Goa by Creometric. Predictive keyword targeting, automated content optimization, and machine-learning-driven link strategies that outrank competitors.",
 };
 
 export default function SearchEngineOptimisationPage() {
   return (
     <ServicePageLayout
-      title="SEO Services That Put Your Business on Page One of Google"
-      subtitle="Search Engine Optimisation in Goa"
+      title="AI-Powered SEO That Puts Your Goa Business on Page One"
+      subtitle="AI-Driven Search Engine Optimisation in Goa"
       heroImage="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=1200&q=80"
-      description="When potential customers in Goa search for your products or services, your website should be the first thing they find. Creometric delivers data-driven SEO strategies that increase organic traffic, improve search rankings, and generate qualified leads for your business."
+      description="When potential customers in Goa search for your products or services, your website should be the first thing they find. Creometric uses AI and predictive analytics to identify high-opportunity keywords, automate content optimization, and build link strategies that outperform traditional SEO — delivering faster rankings and qualified leads for your business."
       benefits={[
-        "Comprehensive technical SEO audits to fix crawl errors, speed issues, and indexing problems holding your site back",
-        "Local SEO optimisation including Google Business Profile management to dominate Goa-specific search results",
-        "Keyword research focused on high-intent search terms your Goa customers are actually using",
-        "On-page optimisation of titles, meta descriptions, headings, and content structure for maximum relevance",
-        "Quality link building through outreach, digital PR, and local Goa business directory submissions",
-        "Regular content creation and blog strategy aligned with your target keywords and audience questions",
-        "Transparent monthly reporting with rankings, traffic, and conversion data — no vanity metrics",
-        "Mobile-first optimisation ensuring your site performs flawlessly on every device",
+        "AI-powered technical audits that automatically detect and prioritize crawl errors, speed issues, and indexing problems",
+        "Local SEO optimisation with AI-driven Google Business Profile management to dominate Goa-specific search results",
+        "Predictive keyword research using machine learning to target high-intent terms your Goa customers will search for next",
+        "Automated on-page optimisation of titles, meta descriptions, headings, and content structure for maximum relevance",
+        "AI-informed link building that identifies the highest-authority opportunities in Goa and your industry",
+        "AI-assisted content creation and topic clustering aligned with search intent and audience behaviour patterns",
+        "Real-time performance dashboards with AI anomaly detection — never miss a ranking shift",
+        "Mobile-first optimisation with AI-driven Core Web Vitals monitoring for flawless performance",
       ]}
       process={[
         {
-          step: "SEO Audit & Competitive Analysis",
+          step: "AI-Powered SEO Audit & Competitive Analysis",
           description:
-            "We perform a thorough audit of your website's technical health, on-page factors, and backlink profile. We also analyse your top competitors in Goa to identify ranking opportunities they are missing.",
+            "Our AI scans your website's technical health, on-page factors, and backlink profile in minutes — not weeks. It also analyses your top Goa competitors to surface ranking opportunities they are missing.",
         },
         {
-          step: "Keyword Strategy & Mapping",
+          step: "Predictive Keyword Strategy & Mapping",
           description:
-            "Using tools like Ahrefs and Google Search Console, we identify the most valuable keywords for your business. Each keyword is mapped to a specific page on your site to avoid cannibalisation and maximise ranking potential.",
+            "Using AI-powered tools alongside Ahrefs and Google Search Console, we predict which keywords will drive the most value for your Goa business. Each keyword is mapped to a specific page to avoid cannibalisation and maximise ranking potential.",
         },
         {
           step: "On-Page & Technical Implementation",
@@ -46,9 +46,9 @@ export default function SearchEngineOptimisationPage() {
             "We create SEO-optimised content that answers your audience's questions and attracts authoritative backlinks. Our link building focuses on quality over quantity, targeting relevant Goa and industry publications.",
         },
         {
-          step: "Monitoring & Continuous Improvement",
+          step: "AI Monitoring & Continuous Optimization",
           description:
-            "SEO is never finished. We track your rankings weekly, analyse algorithm updates, and continuously refine your strategy to maintain and improve your search visibility in Goa and nationally.",
+            "Our AI monitors your rankings in real time, detects algorithm shifts automatically, and continuously refines your strategy to maintain and improve search visibility across Goa and India.",
         },
       ]}
       faq={[

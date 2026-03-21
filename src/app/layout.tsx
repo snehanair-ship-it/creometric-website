@@ -25,13 +25,13 @@ export const metadata: Metadata = {
   verification: {
     google: "NSnkzpHnqcPLki1ZYaxuNc0KjMcdKzU61SgYOy-JGrU",
   },
-  title: "Creometric | Digital Marketing Agency in Goa, India",
+  title: "Creometric | AI-Powered Digital Growth Agency in India",
   description:
-    "Creometric is a digital marketing agency based in Goa, India. We help brands grow through strategy, design, and technology.",
+    "Creometric is an AI-powered digital growth agency based in India. We use intelligent automation, predictive analytics, and machine learning to drive measurable business results.",
   openGraph: {
-    title: "Creometric | Digital Marketing Agency in Goa, India",
+    title: "Creometric | AI-Powered Digital Growth Agency in India",
     description:
-      "Goa's most trusted digital marketing agency. We deliver real results in SEO, social media, PPC and web design for local businesses.",
+      "AI-driven marketing that delivers real results. Predictive SEO, intelligent ad optimization, and data-powered strategies for businesses ready to scale.",
     url: siteUrl,
     siteName: "Creometric",
     locale: "en_IN",
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Creometric | Digital Marketing Agency in Goa, India",
+    title: "Creometric | AI-Powered Digital Growth Agency in India",
     description:
-      "Goa's most trusted digital marketing agency. SEO, social media, PPC and web design.",
+      "AI-driven marketing that delivers real results. Predictive SEO, intelligent automation, and data-powered growth strategies.",
   },
 };
 

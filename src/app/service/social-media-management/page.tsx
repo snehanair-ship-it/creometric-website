@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Social Media Management in Goa | Creometric Digital Marketing",
+  title: "AI-Powered Social Media Management in Goa | Creometric",
   description:
-    "Professional social media management services in Goa. Creometric helps local businesses grow their brand on Instagram, Facebook, LinkedIn & more with data-driven strategies.",
+    "AI-powered social media management in Goa. Creometric uses machine learning for content scheduling, sentiment analysis, and audience targeting to grow your brand on Instagram, Facebook, LinkedIn & more.",
 };
 
 export default function SocialMediaManagementPage() {
   return (
     <ServicePageLayout
-      title="Social Media Management That Drives Real Business Growth"
-      subtitle="Social Media Management in Goa"
+      title="AI-Powered Social Media That Drives Real Business Growth"
+      subtitle="Intelligent Social Media Management in Goa"
       heroImage="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=1200&q=80"
-      description="Your customers in Goa are scrolling right now. Creometric builds and manages social media strategies that turn followers into paying customers — with consistent content, active community engagement, and measurable ROI for businesses across Goa and beyond."
+      description="Your customers in Goa are scrolling right now. Creometric uses AI-driven sentiment analysis, predictive content scheduling, and intelligent audience targeting to turn followers into paying customers — with measurable ROI for businesses across Goa and beyond."
       benefits={[
         "Dedicated social media strategist who understands the Goa market and local audience behaviour",
         "Custom content calendars with a mix of reels, carousels, stories, and static posts tailored to your brand",
