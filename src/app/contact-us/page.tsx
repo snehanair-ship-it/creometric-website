@@ -60,10 +60,10 @@ export default function Contact() {
                   Email
                 </h3>
                 <a
-                  href="mailto:hello@creometric.com"
+                  href="mailto:sales@kilowott.com"
                   className="text-xl font-bold hover:underline"
                 >
-                  hello@creometric.com
+                  sales@kilowott.com
                 </a>
               </div>
               <div>

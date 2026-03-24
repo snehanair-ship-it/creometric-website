@@ -162,4 +162,4 @@
 - Copyright includes "Digital Transformation Partner — Kilowott"
 - Social media: Facebook, Instagram, LinkedIn, Twitter (all active)
 - Phone: +91 91452 46464
-- Email: hello@creometric.com
+- Email: sales@kilowott.com

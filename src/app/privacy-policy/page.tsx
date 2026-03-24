@@ -91,7 +91,7 @@ export default function PrivacyPolicy() {
             If you have questions about this Privacy Policy, contact us at:
           </p>
           <ul className="list-none text-[#8A8A8A] space-y-1 mb-4">
-            <li><strong>Email:</strong> hello@creometric.com</li>
+            <li><strong>Email:</strong> sales@kilowott.com</li>
             <li><strong>Phone:</strong> +91 98509 50259</li>
             <li><strong>Location:</strong> Nordic Intent, Lane 4, PDA Colony, Porvorim, Goa</li>
           </ul>

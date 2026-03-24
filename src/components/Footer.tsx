@@ -97,8 +97,8 @@ export default function Footer() {
             <h3 className="text-white font-bold text-xs uppercase tracking-[0.2em] mb-4 font-inter">Contact</h3>
             <ul className="space-y-3 text-sm font-inter">
               <li>
-                <a href="mailto:hello@creometric.com" className="hover:text-white transition-colors">
-                  hello@creometric.com
+                <a href="mailto:sales@kilowott.com" className="hover:text-white transition-colors">
+                  sales@kilowott.com
                 </a>
               </li>
               <li>
