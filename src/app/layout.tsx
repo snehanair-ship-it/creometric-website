@@ -134,6 +134,14 @@ export default function RootLayout({
           </Script>
         )}
 
+        {/* Clicky Web Analytics */}
+        <Script
+          async
+          data-id="101427348"
+          src="//static.getclicky.com/js"
+          strategy="afterInteractive"
+        />
+
         {/* Google Ads Conversion Tag */}
         {GADS_ID && (
           <>
